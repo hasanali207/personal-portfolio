@@ -9,10 +9,12 @@ const Portfolio = () => {
   return (
    <div className='bg-[#0a192f]'>
 
-<div className="flex justify-center items-center ">
-      <div className="text-5xl leading-tight font-bold gradient-text py-4 ">
-        Latest Work
-        </div>
+<div className="flex flex-col justify-center items-center pb-10">
+      <h1 className="text-4xl leading-tight font-bold gradient-text py-4 ">
+      My Recent Works
+
+        </h1>
+        <p className='text-[#ddd] font-medium text-center'>We put your ideas and thus your wishes in the form of a unique <br/> web project that inspires you and you customers.</p>
       </div>
     <div className=' max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4 p-4 lg:p-0'>
         {/* portfolio 1  */}
