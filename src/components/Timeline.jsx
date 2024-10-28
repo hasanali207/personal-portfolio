@@ -4,9 +4,9 @@ const Timeline = () => {
   return (
     <section className='max-w-6xl mx-auto bg-[]'>
 
-      <div className="timeline flex justify-between  gap-8">
+      <div className="timeline flex flex-col lg:flex-row justify-between  gap-8">
 
-        <div className='w-1/2'>
+        <div className=' w-full lg:w-1/2 '>
         <div className=" ">
          <h1 className='text-5xl leading-tight font-bold gradient-text py-4'> My Education</h1>
            </div>
@@ -20,7 +20,7 @@ const Timeline = () => {
             <span className="text-gray-600 font-medium"></span>
           </h5>
           <p className="text-[#ddd]">
-            Tushbhander, R. M. M. P Goverment High School. 
+            Tushbhander, R. M. M. P Government High School. 
           </p>
         </div>
         <div className="timeline-item">
@@ -33,7 +33,7 @@ const Timeline = () => {
             <span className="text-gray-600 font-medium"></span>
           </h5>
           <p className="text-[#ddd]">
-            Goverment Karim Uddin Public College 
+          Government Karim Uddin Public College. 
           </p>
         </div>
         <div className="timeline-item">
@@ -56,7 +56,7 @@ const Timeline = () => {
 
         {/* Experience section  */}
 
-        <div className=" w-1/2">
+        <div className=" w-full lg:w-1/2">
         <div className=" ">
          <h1 className='text-5xl leading-tight font-bold gradient-text py-4'> My Experience</h1>
            </div>

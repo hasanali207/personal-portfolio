@@ -32,7 +32,7 @@ export default function Skills() {
           <img className="w-20 h-20" src={img8} alt="HTML" />
           
         </div>
-        <p className="text-lg mt-4 text-[#8750f7]">JAVASCRIPT</p>
+        <p className="text-lg mt-4 text-[#8750f7]">JavaScript</p>
                
       </div>
       {/* item1 */}
@@ -51,7 +51,7 @@ export default function Skills() {
           <img className="w-20 h-20" src={img5} alt="HTML" />
           
         </div>
-        <p className="text-lg mt-4 text-[#8750f7] ">React</p>
+        <p className="text-lg mt-4  text-[#8750f7] ">React</p>
                
       </div>
       <div className="flex flex-col justify-center items-center skill-item">
