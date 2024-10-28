@@ -6,7 +6,7 @@ export default function Banner() {
 
 <section className="z-0 h-[90vh] bg-[#0a192f] text-white p-8">
   <div className='container mx-auto flex flex-col lg:flex-row justify-between items-center '>
-      <div className="">
+      <div className="w-1/2">
         <div className="text-5xl font-bold mb-2">
           
           I am HasanAli
@@ -24,7 +24,7 @@ export default function Banner() {
         </div>
       </div>
 
-      <div className='mr-20'>
+      <div className='mr-20 w-1/2'>
           <div className='hero-image flex justify-center items-center gradient-border'>
             <img  src={heroimage} alt="profile-pic" className="align-middle"/>
           </div>
