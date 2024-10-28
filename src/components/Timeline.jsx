@@ -4,7 +4,7 @@ const Timeline = () => {
   return (
     <section className='max-w-6xl mx-auto bg-[]'>
 
-      <div className="timeline flex justify-between items-center  gap-8 pb-24 px-10">
+      <div className="timeline flex justify-between  gap-8">
 
         <div className='w-1/2'>
         <div className=" ">
@@ -56,6 +56,9 @@ const Timeline = () => {
         {/* Experience section  */}
 
         <div className=" w-1/2">
+        <div className=" ">
+         <h1 className='text-5xl leading-tight font-bold gradient-text py-4'> My Experience</h1>
+           </div>
         <div className="timeline-item ">
           
           <p className="tl-duration bg-gray-200 rounded-full px-2 py-1 text-sm uppercase font-medium inline-block mb-4">2018-2020</p>
