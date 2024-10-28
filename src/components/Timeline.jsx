@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaBriefcase, FaGraduationCap } from 'react-icons/fa6'
 
 const Timeline = () => {
   return (
@@ -7,8 +8,10 @@ const Timeline = () => {
       <div className="timeline flex flex-col lg:flex-row justify-between  gap-8">
 
         <div className=' w-full lg:w-1/2 '>
-        <div className=" ">
-         <h1 className='text-5xl leading-tight font-bold gradient-text py-4'> My Education</h1>
+        <div className="flex items-center ">
+        <span className='text-4xl mr-2 text-[#8750f7] gradient-text leading-tight'>< FaGraduationCap /></span>
+         <h1 className='text-5xl leading-tight font-bold gradient-text '>  My Education</h1>
+        
            </div>
         <div className="timeline-item">
          
@@ -57,8 +60,9 @@ const Timeline = () => {
         {/* Experience section  */}
 
         <div className=" w-full lg:w-1/2">
-        <div className=" ">
-         <h1 className='text-5xl leading-tight font-bold gradient-text py-4'> My Experience</h1>
+        <div className="flex items-center ">
+        <span className='text-3xl mr-2 text-[#8750f7] gradient-text leading-tight'>< FaBriefcase /></span>
+         <h1 className='text-5xl leading-tight font-bold gradient-text'> My Experience</h1>
            </div>
            <div className="timeline-item">
          

@@ -2,9 +2,10 @@ import React from 'react'
 import Skills from '../components/Skills'
 import Portfolio from '../components/Portfolio'
 import { Link } from 'react-router-dom'
-import About from '../components/About'
+import Contact from '../pages/Contact'
 import Timeline from '../components/Timeline'
 import Banner from '../components/Banner'
+import About from '../components/About'
 
 const Home = () => {
   return (
@@ -12,8 +13,7 @@ const Home = () => {
         <Banner></Banner>
 
               
-       
-          <Portfolio></Portfolio>
+         <Portfolio></Portfolio>
        
        
         
@@ -21,11 +21,13 @@ const Home = () => {
         <section  id='skills'>
          <Skills></Skills>
         </section>
-
-        <div className='bg-slate-200'>
-        <About></About>
-        </div>
         <Timeline></Timeline>
+       
+        <About></About>
+       
+        
+
+        <Contact></Contact>
     </div>
   )
 }
