@@ -12,15 +12,11 @@ import img10 from '../assets/react.png';
 
 export default function Skills() {
   return (
-    <div className='bg-[#0a192f]'>
-     <div className="flex justify-center items-center ">
-      <div className=" ">
-       
-      <h1 className='text-5xl leading-tight font-bold gradient-text py-4'> My Skills</h1>
-
-
-        </div>
-
+    <div className='bg-[#0a192f] py-20 h-[100vh]'>
+     <div className="flex flex-col justify-center items-center mb-10">
+      
+             <h1 className='text-5xl leading-tight font-bold gradient-text py-4'> My Skills</h1>
+              <p className='text-[#ddd] text-center'>We put your ideas and thus your wishes in the form of a unique web project that <br/> inspires you and you customers.</p>
       </div>
 
       <div className="flex justify-center items-center">

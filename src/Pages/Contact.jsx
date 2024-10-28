@@ -31,7 +31,7 @@ const Contact = () => {
 
 
   return (
-    <div className="z-0">
+    <div className="z-0 px-20 h-[100vh]">
       
       <div className="">
       <p className="pt-2 pb-4 text-5xl text-white leading-tight font-bold gradient-text py-4 ">
