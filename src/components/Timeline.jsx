@@ -7,18 +7,20 @@ const Timeline = () => {
       <div className="timeline flex justify-between items-center  gap-8 pb-24 px-10">
 
         <div className='w-1/2'>
-
-        <div className="timeline-item py-4 ">
+        <div className=" ">
+         <h1 className='text-5xl leading-tight font-bold gradient-text py-4'> My Education</h1>
+           </div>
+        <div className="timeline-item">
          
-          <p className="tl-duration   text-xl uppercase font-extrabold ">
+          <p className="tl-duration timeline-date   text-xl uppercase font-extrabold ">
             2017 - SSC
           </p>
           <h5 className="text-2xl text-white uppercase font-bold py-2">
             SSC (Science)
             <span className="text-gray-600 font-medium"></span>
           </h5>
-          <p className="text-gray-600">
-            I have completed my high school education from Tushbhander, R. M. M. P Gove High School. 
+          <p className="text-[#ddd]">
+            Tushbhander, R. M. M. P Goverment High School. 
           </p>
         </div>
 
