@@ -17,7 +17,7 @@ export default function Banner() {
        
         </div>
        
-        <p className='text-xl font-medium text-[#ddd] max-w-xl w-full '>I break down complex user experience problems to create integrity focussed solutions that connect  billions of people</p>
+        <p className='text-xl text-left font-light text-[#ddd]  w-full '>I break down complex user experience problems to create integrity focussed solutions that connect  billions of people</p>
         <div className="mt-6">
           <a className='mr-4' href="/contact"><button>CONTACT ME</button></a>
          <a href="#skills"> <button>SKILLS</button></a>
