@@ -23,33 +23,34 @@ const Timeline = () => {
             Tushbhander, R. M. M. P Goverment High School. 
           </p>
         </div>
-
-        <div className="timeline-item ">
+        <div className="timeline-item">
          
-          <p className="tl-duration bg-gray-200 rounded-full px-2 py-1 text-sm uppercase font-medium inline-block mb-4">
+          <p className="tl-duration timeline-date   text-xl uppercase font-extrabold ">
             2017 - 2019
           </p>
-          <h5 className="text-xl uppercase font-semibold mb-2">
-            HSC (SCIENCE)
+          <h5 className="text-2xl text-white uppercase font-bold py-2">
+            HSC (Science)
             <span className="text-gray-600 font-medium"></span>
           </h5>
-          <p className="text-gray-600">
-          I completed my College education from Karim Uddin Govt College, Kaligonj, Lalmonirhat. 
+          <p className="text-[#ddd]">
+            Goverment Karim Uddin Public College 
           </p>
         </div>
-        <div className="timeline-item ">
-          
-          <p className="tl-duration bg-gray-200 rounded-full px-2 py-1 text-sm uppercase font-medium inline-block mb-4">
-           2024 - Runnig
+        <div className="timeline-item">
+         
+          <p className="tl-duration timeline-date   text-xl uppercase font-extrabold ">
+          2019 - present
           </p>
-          <h5 className="text-xl uppercase font-semibold mb-2">
-            BSC (Bachelor of Science)
-            <span className="text-gray-600 font-medium"></span>
+          <h5 className="text-2xl text-white uppercase font-bold py-2">
+            BSC Mathematics
           </h5>
-          <p className="text-gray-600">
-          I want to study in maths department in honors 3rd year at Uttar bangla college.
+          <p className="text-[#ddd]">
+           Uttar Bangla College
           </p>
         </div>
+
+        
+      
        
         </div>
 
@@ -59,45 +60,44 @@ const Timeline = () => {
         <div className=" ">
          <h1 className='text-5xl leading-tight font-bold gradient-text py-4'> My Experience</h1>
            </div>
-        <div className="timeline-item ">
-          
-          <p className="tl-duration bg-gray-200 rounded-full px-2 py-1 text-sm uppercase font-medium inline-block mb-4">2018-2020</p>
-          <h5 className="text-xl uppercase font-semibold mb-2">
-            Wordpress & Woocommerce
-            <span className="text-gray-600 font-medium"> - Softech-IT</span>
-          </h5>
-          <p className="text-gray-600">
-          I worked on WordPress, Woocommerce in Fiverr. I was the one who achieved Level One Seller in Fiverr.
-          </p>
-        </div>
-               
-        <div className="timeline-item">
+           <div className="timeline-item">
          
-          <p className="tl-duration bg-gray-200 rounded-full px-2 py-1 text-sm uppercase font-medium inline-block mb-4">
-            2019-2024
-          </p>
-          <h5 className="text-xl uppercase font-semibold mb-2">
-           JOB EXPERIENCE
-            <span className="text-gray-600 font-medium"> - Computer Operator</span>
-          </h5>
-          <p className="text-gray-600">
-            I am doing part time job at ISLAMI DAOWAH INSTITUTE as a computer operator. 
-          </p>
-        </div>
+         <p className="tl-duration timeline-date   text-xl uppercase font-extrabold ">
+         2019 - present
+         </p>
+         <h5 className="text-2xl text-white uppercase font-bold py-2">
+         Theme Development - ITBARI
+         </h5>
+         <p className="text-[#ddd]">
+         I worked on WordPress, Woocommerce in Fiverr.
+         </p>
+       </div>
+       <div className="timeline-item">
+         
+         <p className="tl-duration timeline-date   text-xl uppercase font-extrabold ">
+         2021 - present
+         </p>
+         <h5 className="text-2xl text-white uppercase font-bold py-2">
+         Computer Operator
+         </h5>
+         <p className="text-[#ddd]">
+         I worked as a computer operator in a Islami Dawah Institute.
+         </p>
+       </div>    
+       
 
-         <div className="timeline-item relative ">
+       <div className="timeline-item">
          
-          <p className="tl-duration bg-gray-200 rounded-full px-2 py-1 text-sm uppercase font-medium inline-block mb-4">
-            2024 - present
-          </p>
-          <h5 className="text-xl uppercase font-semibold mb-2">
-            Web Development
-            <span className="text-gray-600 font-medium"> - Programming Hero</span>
-          </h5>
-          <p className="text-gray-600">
-          Programming Hero Is one of the best Trainning Institute in Bangladesh.I completed the web development course here very successfully. I have worked on some live projects.
-          </p>
-        </div>
+         <p className="tl-duration timeline-date   text-xl uppercase font-extrabold ">
+         2024 
+         </p>
+         <h5 className="text-2xl text-white uppercase font-bold py-2">
+         Full Stack Developer
+         </h5>
+         <p className="text-[#ddd]">
+         I am learning full stack Developer from Programming Hero.
+         </p>
+       </div> 
         </div>
 
        
