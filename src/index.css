@@ -87,7 +87,7 @@ body {
 .hero-image {
   border-radius: 38px;
   width: 100%;
-  max-width: 550px;
+  max-width: 350px;
   /* height: 450px; */
   height: 70vh;
   justify-content: center;

@@ -54,8 +54,12 @@ const Header = () => {
             {navitems}
           </ul>
         </div>
-        <Link to={'/'} className=" flex items-center"> <img className='w-24 h-24 flex items-center' src={logo} alt="" />   </Link>
-        <a href="mailto:hasandevpro@gmail.com" className='lg:flex sm:hidden  text-white hover:text-[#757575]'> hasandevpro@gmail.com </a>
+       
+       <div className='flex items-center'>
+       <Link to={'/'} className=" "> <img className='w-24 h-24' src={logo} alt="" />   </Link>
+       
+       <a href="mailto:hasandevpro@gmail.com" className= 'hidden md:hidden lg:flex  text-white hover:text-[#757575]'> hasandevpro@gmail.com </a>
+       </div>
          
       </div>
       <div className="navbar-end hidden lg:flex">
