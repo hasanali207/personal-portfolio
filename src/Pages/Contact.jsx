@@ -53,6 +53,7 @@ const Contact = () => {
       type="text"
       name="user_name"
       placeholder="Name"
+      required
       className="w-full py-3 pl-4  border rounded-md bg-transparent border-[#22272c] focus:border-[#8750f7]  focus:border-solid"
     />
   </div>  
@@ -62,6 +63,7 @@ const Contact = () => {
       type="email"
       name="user_email" 
       placeholder="Email"
+      required
       className="border text-white   w-full  py-3 pl-4  rounded-md bg-transparent border-[#22272c] focus:border-[#8750f7] "
     />
   </div>
@@ -69,15 +71,17 @@ const Contact = () => {
     <input
       type="text"
       name="subject" 
+      required
       placeholder="Subject"
        className="border text-white   w-full py-3 pl-4  rounded-md bg-transparent border-[#22272c] focus:border-[#8750f7] "
     />
   </div>
   <div className="mb-4">
     <input
-      type="text"
+      type="text" 
       name="phone" 
       placeholder="phone"
+      
       className="border text-white   w-full py-3 pl-4  rounded-md bg-transparent border-[#22272c] focus:border-[#8750f7] "
     />
   </div>
@@ -85,6 +89,7 @@ const Contact = () => {
     <textarea
       name="message"
       placeholder="Message"
+      required
        className="border  text-white   w-full py-3 pl-4 rounded-md bg-transparent border-[#22272c] focus:border-[#8750f7]   "
       rows="4"
     ></textarea>

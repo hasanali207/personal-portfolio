@@ -17,7 +17,7 @@ const About = () => {
           </p>
           <div className="btn-con">
             <a
-              download
+              download ="HASANALICV.pdf"
               href="assets/HASANALICV.pdf"
               className="button button_flex bg-teal-600  text-white py-2 px-4 rounded flex items-center"
             >
