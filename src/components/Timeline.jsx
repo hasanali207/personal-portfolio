@@ -3,7 +3,7 @@ import { FaBriefcase, FaGraduationCap } from 'react-icons/fa6'
 
 const Timeline = () => {
   return (
-    <section className='max-w-6xl mx-auto pt-10 ' id='experience'>
+    <section className='max-w-6xl mx-auto pt-0 lg:pt-6 ' id='experience'>
 
       <div className="timeline flex flex-col lg:flex-row justify-between  gap-8">
 
