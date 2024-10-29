@@ -1,8 +1,8 @@
-import React, { useRef } from "react";
 import emailjs from '@emailjs/browser';
-import Swal from "sweetalert2";
-import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import { useRef } from "react";
 import { FaFacebookSquare } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
+import Swal from "sweetalert2";
 
 const Contact = () => {
   const form = useRef();
@@ -28,7 +28,6 @@ const Contact = () => {
         },  
       );
   };
-
 
   return (
     <div className="z-0 px-10 lg:px-20 ">
