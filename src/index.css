@@ -109,7 +109,7 @@ body {
   transform: rotate(-4deg) translate;
 }
 /* contact  */
-
+/* 
 input{
   border: none;
   padding: 10px;
@@ -118,8 +118,8 @@ input{
   border: 2px solid #2e343b;
 }
 input:focus{
-border: 1px solid #8750f7;
-}
+border-color: #8750f7;
+} */
 
 .timeline-item{
     position: relative;

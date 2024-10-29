@@ -54,7 +54,7 @@ const Contact = () => {
       name="user_name"
       placeholder="Name"
       required
-      className="w-full py-3 pl-4  border rounded-md bg-transparent border-[#22272c] focus:border-[#8750f7]  focus:border-solid"
+    className="border text-white w-full py-3 pl-4 rounded-md bg-[#0a192f] border-[#22272c] focus:bg-[#0a192f] focus:border-[#8750f7] focus:outline-none"
     />
   </div>  
   <div className="mb-4">
@@ -64,7 +64,7 @@ const Contact = () => {
       name="user_email" 
       placeholder="Email"
       required
-      className="border text-white   w-full  py-3 pl-4  rounded-md bg-transparent border-[#22272c] focus:border-[#8750f7] "
+       className="border text-white w-full py-3 pl-4 rounded-md bg-[#0a192f] border-[#22272c] focus:bg-[#0a192f] focus:border-[#8750f7] focus:outline-none"
     />
   </div>
   <div className="mb-4">
@@ -72,8 +72,8 @@ const Contact = () => {
       type="text"
       name="subject" 
       required
-      placeholder="Subject"
-       className="border text-white   w-full py-3 pl-4  rounded-md bg-transparent border-[#22272c] focus:border-[#8750f7] "
+      placeholder="Subject" 
+      className="border text-white w-full py-3 pl-4 rounded-md bg-[#0a192f] border-[#22272c] focus:bg-[#0a192f] focus:border-[#8750f7] focus:outline-none"
     />
   </div>
   <div className="mb-4">
@@ -81,8 +81,7 @@ const Contact = () => {
       type="text" 
       name="phone" 
       placeholder="phone"
-      
-      className="border text-white   w-full py-3 pl-4  rounded-md bg-transparent border-[#22272c] focus:border-[#8750f7] "
+      className="border text-white w-full py-3 pl-4 rounded-md bg-[#0a192f] border-[#22272c] focus:bg-[#0a192f] focus:border-[#8750f7] focus:outline-none"
     />
   </div>
   <div className="mb-4 col-span-full">
@@ -90,7 +89,7 @@ const Contact = () => {
       name="message"
       placeholder="Message"
       required
-       className="border  text-white   w-full py-3 pl-4 rounded-md bg-transparent border-[#22272c] focus:border-[#8750f7]   "
+        className="border text-white w-full py-3 pl-4 rounded-md bg-[#0a192f] border-[#22272c] focus:bg-[#0a192f] focus:border-[#8750f7] focus:outline-none"
       rows="4"
     ></textarea>
   </div>

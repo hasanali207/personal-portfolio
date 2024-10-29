@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaFacebookSquare } from 'react-icons/fa'
+import { FaGithub, FaLinkedin } from 'react-icons/fa6'
 import heroimage from '../assets/img/heroimage.png'
 export default function Banner() {
   return (
@@ -18,9 +20,19 @@ export default function Banner() {
         </div>
        
         <p className='text-xl text-left font-light text-[#ddd]  w-full '>I break down complex user experience problems to create integrity focussed solutions that connect  billions of people</p>
-        <div className="mt-6">
-          <a className='mr-4' href="/contact"><button>CONTACT ME</button></a>
-         <a href="#skills"> <button>SKILLS</button></a>
+        <div className="mt-6 flex  flex-col lg:flex-row gap-10  items-center">
+         <div>
+         <a className='mr-4' href="/contact"><button>CONTACT ME</button></a>
+         <a href="#skills"> <button>SKILLS</button></a> 
+         </div>
+
+         <div className="flex   space-x-4"> 
+                  <a className="text-3xl text-white " href="https://github.com/hasanali207/"><FaGithub />
+                  </a>
+                  <a  className="text-3xl text-white"  href="https://www.linkedin.com/in/hasanali207/"><FaLinkedin   /></a>
+                  <a  className="text-3xl text-white"  href="https://www.facebook.com/hasanali142228/"><FaFacebookSquare />
+                  </a>
+              </div>
         </div>
       </div>
 
