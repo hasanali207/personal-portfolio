@@ -30,8 +30,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="z-0 px-10 lg:px-20 ">
-      
+    <section className="z-0 px-10 lg:px-20 ">
+      <div className='container px-4 lg:px-0'>
       <div className="">
       <p className="pt-2 pb-4 text-5xl text-white leading-tight font-bold gradient-text py-4 ">
             Let’s work together!
@@ -40,8 +40,8 @@ const Contact = () => {
             I design and code beautifully simple things and i love what i do. <br/> Just simple like that!
             </p>
       </div>   
-      <section className="">
-        <div className="flex flex-col lg:flex-row justify-between gap-5 w-full  ">
+      
+        <div className="flex flex-col lg:flex-row justify-between space-x-10 w-full  ">
           
          
           <form  data-aos="fade-right"     data-aos-delay="500"  ref={form} onSubmit={sendEmail}  className="mx-auto p-6 w-full lg:w-1/2">
@@ -159,9 +159,10 @@ const Contact = () => {
 
 
         </div>
+        </div>
       </section>
       
-    </div>
+   
   );
 };
 
