@@ -20,17 +20,17 @@ export default function Banner() {
         </div>
        
         <p className='text-xl text-left font-light text-[#ddd]  w-full '>I break down complex user experience problems to create integrity focussed solutions that connect  billions of people</p>
-        <div className="mt-6 flex  flex-col lg:flex-row gap-10  items-center">
+        <div className="">
          <div>
-         <a className='mr-4' href="/contact"><button>CONTACT ME</button></a>
-         <a href="#skills"> <button>SKILLS</button></a> 
+         <nav className="nav hidden lg:block" aria-label="In-page jump links">
+          <ul className=" py-4 w-max"><li><a className="group flex items-center py-3" href="#about"><span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span><span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">About</span></a></li><li><a className="group flex items-center py-3" href="#experience"><span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span><span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">Experience</span></a></li></ul></nav>
          </div>
 
-         <div className="flex   space-x-4"> 
-                  <a className="text-3xl text-white " href="https://github.com/hasanali207/"><FaGithub />
+         <div className="flex   space-x-4 mt-6 lg:mt-0"> 
+                  <a className="text-2xl text-white " href="https://github.com/hasanali207/"><FaGithub />
                   </a>
-                  <a  className="text-3xl text-white"  href="https://www.linkedin.com/in/hasanali207/"><FaLinkedin   /></a>
-                  <a  className="text-3xl text-white"  href="https://www.facebook.com/hasanali142228/"><FaFacebookSquare />
+                  <a  className="text-2xl text-white"  href="https://www.linkedin.com/in/hasanali207/"><FaLinkedin   /></a>
+                  <a  className="text-2xl text-white"  href="https://www.facebook.com/hasanali142228/"><FaFacebookSquare />
                   </a>
               </div>
         </div>
