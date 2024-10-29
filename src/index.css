@@ -182,7 +182,12 @@ border-color: #8750f7;
   gap: 20px;
   margin-top: 20px;
 }
-
+@media (max-width: 768px) {
+  /* Adjust for tablets and small screens */
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
 .project-card {
   background: #333;
   padding: 20px;

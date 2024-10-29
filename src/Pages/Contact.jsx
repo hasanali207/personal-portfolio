@@ -44,7 +44,7 @@ const Contact = () => {
         <div className="flex flex-col lg:flex-row justify-between space-x-10 w-full  ">
           
          
-          <form  data-aos="fade-right"     data-aos-delay="500"  ref={form} onSubmit={sendEmail}  className="mx-auto p-6 w-full lg:w-1/2">
+          <form  data-aos="fade-right"     data-aos-delay="500"  ref={form} onSubmit={sendEmail}  className="py-4 lg:py-6 w-full lg:w-1/2">
    <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">     
   <div className="mb-4">
     

@@ -20,7 +20,8 @@ const RecentWorks = () => {
     );
   
     return (
-      <div className="recent-works">
+      <section className="recent-works">
+        <div className="container">
         <div className="flex justify-center items-center ">
       
       <h1 className='text-5xl leading-tight font-bold gradient-text py-4'> My Recent Works</h1>
@@ -39,13 +40,14 @@ const RecentWorks = () => {
         </div>
         <div className="projects">
           {filteredProjects.map((project) => (
-            <div key={project.id} className="project-card">
+            <div key={project.id} className="project-card ">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
             </div>
           ))}
         </div>
-      </div>
+        </div>
+      </section>
     );
   };
   
