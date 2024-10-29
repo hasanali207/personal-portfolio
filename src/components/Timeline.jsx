@@ -68,7 +68,7 @@ const Timeline = () => {
            <div className="timeline-item">
          
          <p className="tl-duration timeline-date   text-xl uppercase font-extrabold ">
-         2019 - present
+         2019 - 2021
          </p>
          <h5 className="text-2xl text-white uppercase font-bold py-2">
          Theme Development - ITBARI

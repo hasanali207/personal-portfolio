@@ -138,6 +138,7 @@ border: 1px solid #8750f7;
 .timeline-item:hover{
   background-image: linear-gradient(260deg, #2a1454 0%,  #7d52d2 100%);
   color:white !important;
+  transition: .4s;
 }
 
 /* Portfolio   */
