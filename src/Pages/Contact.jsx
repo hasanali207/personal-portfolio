@@ -44,8 +44,8 @@ const Contact = () => {
         <div className="flex flex-col lg:flex-row justify-between gap-5 w-full  ">
           
          
-          <form ref={form} onSubmit={sendEmail} className="mx-auto p-6 w-full lg:w-1/2">
-   <div className="grid grid-cols-2 gap-3">     
+          <form  data-aos="fade-right"     data-aos-delay="500"  ref={form} onSubmit={sendEmail}  className="mx-auto p-6 w-full lg:w-1/2">
+   <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">     
   <div className="mb-4">
     
     <input
@@ -102,7 +102,8 @@ const Contact = () => {
     />
   </div>
 </form>
-<div data-aos="fade-right" className=" mt-6 w-full lg:w-1/2">
+<div data-aos="fade-left"     data-aos-delay="700"
+ className=" mt-6 w-full lg:w-1/2">
             
             <div className="space-y-4">
               <p className="flex items-center text-white">

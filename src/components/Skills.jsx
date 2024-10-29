@@ -8,20 +8,22 @@ import img7 from '../assets/wordpress.png';
 import img8 from '../assets/js.png';
 import img9 from '../assets/figma.png';
 import img10 from '../assets/react.png';
+import Marquee from 'react-fast-marquee';
 
 
 export default function Skills() {
   return (
-    <div className='bg-[#0a192f] py-20 h-[100vh]'>
+    <div className='bg-[#0a192f] py-20 h-full lg:h-[100vh]'>
+      <div className='container mx-auto'> 
      <div className="flex flex-col justify-center items-center mb-10">
       
              <h1 className='text-5xl leading-tight font-bold gradient-text py-4'> My Skills</h1>
               <p className='text-[#ddd] text-center'>We put your ideas and thus your wishes in the form of a unique web project that <br/> inspires you and you customers.</p>
       </div>
 
-      <div className="flex justify-center items-center">
+      <div className="flex flex-wrap justify-center items-center w-full">
 
-      {/* item1 */}
+      {/* item1 */} 
       <div className="flex flex-col justify-center items-center skill-item">
         
         <div className='icon-box'>
@@ -64,8 +66,8 @@ export default function Skills() {
 
 
       </div>
-
-
+     
+      </div>
 
     </div>
   )
