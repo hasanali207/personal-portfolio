@@ -39,7 +39,7 @@ const RecentWorks = () => {
     <section className="recent-works">
       <div className="container">
         <div className="flex justify-center items-center ">
-          <h1 className='text-5xl leading-tight font-bold gradient-text py-4'> My Recent Works</h1>
+          <h1 className='text-3xl lg:text-5xl leading-tight font-bold gradient-text py-4'> My Recent Works</h1>
         </div>
         
         <div className="category-buttons">
