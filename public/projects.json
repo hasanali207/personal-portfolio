@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "category": "Apps",
+      "title": "Deloitte Project",
+      "description": "Finance project for Deloitte."
+    },
+    {
+      "id": 2,
+      "category": "React",
+      "title": "Business Growth",
+      "description": "Design experience for business growth."
+    },
+    {
+      "id": 3,
+      "category": "Nextjs",
+      "title": "Business Growth",
+      "description": "Design experience for business growth."
+    },
+    {
+      "id": 4,
+      "category": "React",
+      "title": "Business Growth",
+      "description": "Design experience for business growth."
+    },
+    {
+      "id": 5,
+      "category": "React",
+      "title": "Business Growth",
+      "description": "Design experience for business growth."
+    },
+    {
+      "id": 6,
+      "category": "UX/UI",
+      "title": "Business Growth",
+      "description": "Design experience for business growth."
+    }
+  ]
+  
