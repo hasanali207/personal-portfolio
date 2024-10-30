@@ -84,9 +84,9 @@ const RecentWorks = () => {
         </div>
         
         {visibleCount < filteredProjects.length && (
-          <button onClick={handleLoadMore} className="btn bg-[#8750f7] text-white py-2 px-4 rounded mt-4">
-            Load More
-          </button>
+         <button onClick={handleLoadMore} className="group flex items-center py-3">
+        <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">See More</span></button>
+        
         )}
       </div>
     </section>
