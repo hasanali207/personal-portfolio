@@ -123,20 +123,37 @@ const RecentWorks = () => {
 
    {/* Modal Component */}
    {isModalOpen && selectedProject && (
-          <div className="z-50 modal-overlay fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-            <div className="modal-content bg-white p-6 rounded-lg w-[80%] md:w-1/2 lg:w-2/3">
-              <button onClick={handleCloseModal} className="text-right text-xl font-bold">&times;</button>
-              <h2 className="text-2xl font-bold">{selectedProject.title}</h2>
-              <p>{selectedProject.description}</p>
-              <img src={selectedProject.thumbnail} alt={selectedProject.title} className="w-full mt-4 rounded" />
-              <div className="flex flex-wrap gap-2 mt-4">
-                <h1 className="text-[#ddd] w-full">Technologies:</h1>  {/* Label */}
-                {selectedProject.technologies.map((tech, index) => (
-                  <img key={index} src={tech.url} alt={tech.title} title={tech.title} className="h-10" />
-                ))}
-              </div>
-            </div>
-          </div>
+          // Inside your modal component (or wherever you render modal content)
+<div
+  className="modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
+  onClick={() => setIsModalOpen(false)}
+>
+  <div
+    className="modal-content bg-white rounded-lg p-6 max-w-lg w-full max-h-[80vh] overflow-y-auto"
+    onClick={(e) => e.stopPropagation()}
+  >
+    <h2 className="text-2xl font-bold mb-4">{selectedProject?.title}</h2>
+    <p className="mb-4">{selectedProject?.description}</p>
+    
+    <div className="technologies mb-4">
+      <h3 className="text-lg font-semibold">Technologies Used:</h3>
+      {selectedProject?.technologies?.map((tech, index) => (
+        <img key={index} src={tech.url} alt={tech.title} className="h-10 mr-2" />
+      ))}
+    </div>
+
+    <a href={selectedProject?.github} target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href={selectedProject?.liveDemo} target="_blank" rel="noopener noreferrer" className="ml-4">Live Demo</a>
+    
+    <button
+      className="btn mt-6"
+      onClick={() => setIsModalOpen(false)}
+    >
+      Close
+    </button>
+  </div>
+</div>
+
         )}
 
 
