@@ -123,13 +123,14 @@ const RecentWorks = () => {
 
    {/* Modal Component */}
    {isModalOpen && selectedProject && (
-          <div className="modal-overlay fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-            <div className="modal-content bg-white p-6 rounded-lg w-3/4 md:w-1/2 lg:w-1/3">
+          <div className="z-50 modal-overlay fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+            <div className="modal-content bg-white p-6 rounded-lg w-[80%] md:w-1/2 lg:w-2/3">
               <button onClick={handleCloseModal} className="text-right text-xl font-bold">&times;</button>
               <h2 className="text-2xl font-bold">{selectedProject.title}</h2>
               <p>{selectedProject.description}</p>
               <img src={selectedProject.thumbnail} alt={selectedProject.title} className="w-full mt-4 rounded" />
               <div className="flex flex-wrap gap-2 mt-4">
+                <h1 className="text-[#ddd] w-full">Technologies:</h1>  {/* Label */}
                 {selectedProject.technologies.map((tech, index) => (
                   <img key={index} src={tech.url} alt={tech.title} title={tech.title} className="h-10" />
                 ))}
