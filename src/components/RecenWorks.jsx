@@ -60,18 +60,20 @@ const RecentWorks = () => {
               key={project.id} 
               className={`project-card ${zoomEffect ? "zoom-in" : ""}`} // Apply zoom class conditionally
             >
-              <div className="w-full p-6">
+              <div className="w-full ">
                 <img 
-                  className="w-full" 
+                  className="w-full rounded-lg" 
                   src={project.thumbnail} 
                   alt={project.title} 
                 />
               </div>
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
+              <h3 className="">{project.title}</h3>
+              <p className="">{project.description}</p>
+
+              
               
               <div className="flex flex-wrap items-center gap-1"> 
-                <h1 className="text-[#ddd]">Technologies:</h1>
+                <h1 className="text-[#ddd] w-full">Technologies:</h1> 
                 {Array.isArray(project.technologies) &&
                   project.technologies.map((tech, index) => (
                     <img 

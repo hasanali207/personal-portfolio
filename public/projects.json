@@ -17,19 +17,23 @@
       { "url": "https://i.ibb.co.com/R0mv1TV/firebase.png", "title": "FIREBASE" }
     ]
   },
-  {
+    {
     "id": 2,
     "category": "React",
     "title": "Business Growth",
     "description": "Design experience for business growth.",
-    "thumbnail": "https://i.ibb.co.com/Wyd6wjM/02.png"
-  },
-  {
-    "id": 2,
-    "category": "React",
-    "title": "Business Growth",
-    "description": "Design experience for business growth.",
-    "thumbnail": "https://i.ibb.co.com/Lnk4DXB/01-2.png"
+    "thumbnail": "https://i.ibb.co.com/Wyd6wjM/02.png",
+    "technologies": [
+      { "url": "https://i.ibb.co.com/vq4LHqG/HTML.png", "title": "HTML" },
+      { "url": "https://i.ibb.co.com/FB67Gtx/css.png", "title": "CSS" },
+      { "url": "https://i.ibb.co.com/GnNBR01/tailwind.png", "title": "TAILWINDCSS" },
+      { "url": "https://i.ibb.co.com/0CbBfTc/Java-Script.png", "title": "JAVASCRIPT" },
+      { "url": "https://i.ibb.co.com/Mg5fZWh/react.png", "title": "REACT" },
+      { "url": "https://i.ibb.co.com/3Rz4kx3/node.png", "title": "NODEJS" },
+      { "url": "https://i.ibb.co.com/qN9wSnB/express.png", "title": "EXPRESSJS" },
+      { "url": "https://i.ibb.co.com/2S0F4xB/mongo.png", "title": "MONGODB" },
+      { "url": "https://i.ibb.co.com/R0mv1TV/firebase.png", "title": "FIREBASE" }
+    ]
   }
   
 ]
