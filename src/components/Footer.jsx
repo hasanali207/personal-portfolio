@@ -4,14 +4,13 @@ import {  FaGithub, FaLinkedin, FaLinkedinIn } from 'react-icons/fa6'
 
 const Footer = () => {
   return (
-    <div>
-
+    
 <footer className=" mt-20 footer footer-center  text-base-content rounded p-10">
   <nav className="grid grid-flow-col text-lg gap-4">
     <a href='/' className="link link-hover text-slate-600 uppercase">Home</a>
-    <a href='/contact' className="link link-hover text-slate-600  uppercase">Contact</a>
-    <a href='/about' className="link link-hover text-slate-600  uppercase">About</a>
-    <a href='/portfolio' className="link link-hover text-slate-600  uppercase">Portfolio</a>
+    <a href='#contact' className="link link-hover text-slate-600  uppercase">Contact</a>
+    <a href='#about' className="link link-hover text-slate-600  uppercase">About</a>
+    <a href='#skills' className="link link-hover text-slate-600  uppercase">Skills</a>
   </nav>
   <nav>
     
@@ -29,7 +28,7 @@ const Footer = () => {
   </aside>
 </footer>
 
-    </div>
+    
   )
 }
 
