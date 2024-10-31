@@ -4,6 +4,7 @@
     "category": "Apps",
     "title": "Deloitte Project",
     "description": "Finance project for Deloitte.",
+    "thumbnail": "",
     "technologies": [
       { "url": "https://i.ibb.co.com/vq4LHqG/HTML.png", "title": "HTML" },
       { "url": "https://i.ibb.co.com/FB67Gtx/css.png", "title": "CSS" },
