@@ -4,7 +4,7 @@
     "category": "Apps",
     "title": "Deloitte Project",
     "description": "Finance project for Deloitte.",
-    "thumbnail": "",
+    "thumbnail": "https://i.ibb.co.com/2Yh6QGS/01.png",
     "technologies": [
       { "url": "https://i.ibb.co.com/vq4LHqG/HTML.png", "title": "HTML" },
       { "url": "https://i.ibb.co.com/FB67Gtx/css.png", "title": "CSS" },
@@ -21,30 +21,15 @@
     "id": 2,
     "category": "React",
     "title": "Business Growth",
-    "description": "Design experience for business growth."
+    "description": "Design experience for business growth.",
+    "thumbnail": "https://i.ibb.co.com/Wyd6wjM/02.png"
   },
   {
-    "id": 3,
-    "category": "Nextjs",
-    "title": "Business Growth",
-    "description": "Design experience for business growth."
-  },
-  {
-    "id": 4,
+    "id": 2,
     "category": "React",
     "title": "Business Growth",
-    "description": "Design experience for business growth."
-  },
-  {
-    "id": 5,
-    "category": "React",
-    "title": "Business Growth",
-    "description": "Design experience for business growth."
-  },
-  {
-    "id": 6,
-    "category": "UX/UI",
-    "title": "Business Growth",
-    "description": "Design experience for business growth."
+    "description": "Design experience for business growth.",
+    "thumbnail": "https://i.ibb.co.com/Lnk4DXB/01-2.png"
   }
+  
 ]
