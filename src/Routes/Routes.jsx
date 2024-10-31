@@ -8,6 +8,7 @@ import Contact from "../Pages/Contact";
 import About from "../components/About";
 import Portfolio from "../components/Portfolio";
 import Timeline from "../components/Timeline";
+import PortfolioDetails from "../components/PortfolioDetails";
 
 const router = createBrowserRouter([
     {
@@ -21,6 +22,12 @@ const router = createBrowserRouter([
         {
             path: "portfolio",    
             element: <Portfolio></Portfolio>,
+        },
+        {
+          path: "portfolio/:id",
+          element: <PortfolioDetails />,
+          loader: () => fetch("../projects.json"),        
+          
         },
         {
             path: "timeline",    

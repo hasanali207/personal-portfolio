@@ -1,10 +1,13 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const RecentWorks = () => {
   const [activeCategory, setActiveCategory] = useState("All");
   const [projects, setProjects] = useState([]);
   const [visibleCount, setVisibleCount] = useState(2);
   const [zoomEffect, setZoomEffect] = useState(true); // State for zoom effect
+  const [selectedProject, setSelectedProject] = useState(null); // State to hold selected project
+  const [isModalOpen, setIsModalOpen] = useState(false); 
+
 
   useEffect(() => {
     fetch('/projects.json')
@@ -34,6 +37,20 @@ const RecentWorks = () => {
   const handleLoadMore = () => {
     setVisibleCount((prevCount) => prevCount + 2);
   };
+
+
+
+  const handleOpenModal = (project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  // Function to close modal
+  const handleCloseModal = () => {
+    setSelectedProject(null);
+    setIsModalOpen(false);
+  };
+
 
   return (
     <section className="recent-works">
@@ -87,16 +104,41 @@ const RecentWorks = () => {
                 }
               </div>
 
-              <button className="text-center btn bg-[#ccc] mt-4 w-full">Details</button>
+             <button onClick={() => handleOpenModal(project)} className="text-center btn bg-[#ccc] mt-4 w-full">Details</button>
+
+             
             </div>
           ))}
         </div>
-        
+          
+
+
+
         {visibleCount < filteredProjects.length && (
          <button onClick={handleLoadMore} className="group flex items-center py-3">
         <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">See More</span></button>
         
         )}
+
+
+   {/* Modal Component */}
+   {isModalOpen && selectedProject && (
+          <div className="modal-overlay fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+            <div className="modal-content bg-white p-6 rounded-lg w-3/4 md:w-1/2 lg:w-1/3">
+              <button onClick={handleCloseModal} className="text-right text-xl font-bold">&times;</button>
+              <h2 className="text-2xl font-bold">{selectedProject.title}</h2>
+              <p>{selectedProject.description}</p>
+              <img src={selectedProject.thumbnail} alt={selectedProject.title} className="w-full mt-4 rounded" />
+              <div className="flex flex-wrap gap-2 mt-4">
+                {selectedProject.technologies.map((tech, index) => (
+                  <img key={index} src={tech.url} alt={tech.title} title={tech.title} className="h-10" />
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+
       </div>
     </section>
   );
