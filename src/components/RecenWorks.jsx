@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const RecentWorks = () => {
   const [activeCategory, setActiveCategory] = useState("All");
   const [projects, setProjects] = useState([]);
   const [visibleCount, setVisibleCount] = useState(2);
-  const [zoomEffect, setZoomEffect] = useState(true); // State for zoom effect
-  const [selectedProject, setSelectedProject] = useState(null); // State to hold selected project
-  const [isModalOpen, setIsModalOpen] = useState(false); 
+  const [zoomEffect, setZoomEffect] = useState(true); 
 
 
   useEffect(() => {
@@ -39,17 +38,6 @@ const RecentWorks = () => {
   };
 
 
-
-  const handleOpenModal = (project) => {
-    setSelectedProject(project);
-    setIsModalOpen(true);
-  };
-
-  // Function to close modal
-  const handleCloseModal = () => {
-    setSelectedProject(null);
-    setIsModalOpen(false);
-  };
 
 
   return (
@@ -104,7 +92,7 @@ const RecentWorks = () => {
                 }
               </div>
 
-             <button onClick={() => handleOpenModal(project)} className="text-center btn bg-[#ccc] mt-4 w-full">Details</button>
+             <Link to={`/portfolio/${project.id}`}><button  className="text-center btn bg-[#ccc] mt-4 w-full">Details</button></Link>
 
              
             </div>
@@ -120,41 +108,6 @@ const RecentWorks = () => {
         
         )}
 
-
-   {/* Modal Component */}
-   {isModalOpen && selectedProject && (
-          // Inside your modal component (or wherever you render modal content)
-<div
-  className="modal-overlay fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50"
-  onClick={() => setIsModalOpen(false)}
->
-  <div
-    className="modal-content bg-white rounded-lg p-6 max-w-lg w-full max-h-[80vh] overflow-y-auto"
-    onClick={(e) => e.stopPropagation()}
-  >
-    <h2 className="text-2xl font-bold mb-4">{selectedProject?.title}</h2>
-    <p className="mb-4">{selectedProject?.description}</p>
-    
-    <div className="technologies mb-4">
-      <h3 className="text-lg font-semibold">Technologies Used:</h3>
-      {selectedProject?.technologies?.map((tech, index) => (
-        <img key={index} src={tech.url} alt={tech.title} className="h-10 mr-2" />
-      ))}
-    </div>
-
-    <a href={selectedProject?.github} target="_blank" rel="noopener noreferrer">GitHub</a>
-    <a href={selectedProject?.liveDemo} target="_blank" rel="noopener noreferrer" className="ml-4">Live Demo</a>
-    
-    <button
-      className="btn mt-6"
-      onClick={() => setIsModalOpen(false)}
-    >
-      Close
-    </button>
-  </div>
-</div>
-
-        )}
 
 
       </div>

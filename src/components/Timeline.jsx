@@ -97,10 +97,10 @@ const Timeline = () => {
          2024 
          </p>
          <h5 className="text-2xl text-white uppercase font-bold py-2">
-         Full Stack Developer
+         Full Stack Path
          </h5>
          <p className="text-[#ddd]">
-         I am learning full stack Developer from Programming Hero.
+         learning Full Stack SQL Path from Programming Hero.
          </p>
        </div> 
         </div>

@@ -13,7 +13,7 @@ export default function PortfolioDetails() {
   return (
     <div>
         
-
+    <h1>{project.title}</h1>
 
         
   </div>
