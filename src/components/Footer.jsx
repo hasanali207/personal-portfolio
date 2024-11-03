@@ -32,7 +32,7 @@ const Footer = () => {
 
   return (
     
-      <div className="pt-32">
+      <div className="pt-10">
 
 <footer>
   <div className="top">
