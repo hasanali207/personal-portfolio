@@ -6,7 +6,7 @@ export default function Banner() {
   return (
     <>
 
-<section className="z-0  bg-[#0a192f] text-white p-8">
+<section className="z-0  bg-[#0a192f] text-white p-8" id='header'>
   <div className='container mx-auto flex flex-col lg:flex-row justify-between items-center '>
       <div className="w-full lg:w-1/2">
         <div className=" text-3xl lg:text-5xl font-bold mb-2">
