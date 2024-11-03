@@ -40,13 +40,14 @@ const Footer = () => {
       <FaChevronUp />
     </a>
   </div>
-  <div className="flex justify-center items-center flex-col space-y-7">
+  <div className="flex justify-center items-center flex-col  space-y-7">
 
   <Link to={'/'} className=" "> <img className='w-24 h-24' src={logo} alt="" />   </Link>
-    <p className="text-[#ddd]">© 2024 Your HasanDevpro</p>
-    <ul className="flex justify-between items-center text-[#ddd]">
+  <ul className="flex justify-between items-center text-[#ddd]">
       {navitems}
     </ul>
+    <p className="text-[#ddd]">©C 2024 HasanDevpro</p>
+   
   </div>
 </footer>
       </div>
