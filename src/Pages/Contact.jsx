@@ -107,14 +107,14 @@ const Contact = () => {
  className=" mt-6 w-full lg:w-1/2">
             
             <div className="space-y-4">
-            <div className="flex items-center text-white space-x-4">
+            <div className="flex items-center text-[#ddd] space-x-4">
                <div className="icon"><MdOutlinePhoneInTalk /></div>
                 <span>+8801861026837</span>
               </div>
-              <div className="flex items-center text-white space-x-4">
+              <div className="flex items-center text-[#ddd] space-x-4">
                 <div className="icon"><FaRegEnvelope></FaRegEnvelope></div>                <span>hasandevpro@gmail.com</span>
               </div>
-              <div className="flex items-center text-white space-x-4">
+              <div className="flex items-center text-[#ddd] space-x-4">
                 <div className="icon"><FaMapMarkerAlt /></div>
                 <span>Gulshan-1, Dhaka-1212, Bangladesh</span>
               </div>

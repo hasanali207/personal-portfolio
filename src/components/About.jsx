@@ -1,4 +1,5 @@
 import React from "react";
+import CountUp from "react-countup";
 import { FaArrowDown } from "react-icons/fa";
 
 const About = () => {
@@ -20,7 +21,7 @@ const About = () => {
             <a
               download ="HASANALICV.pdf"
               href="assets/HASANALICV.pdf"
-              className="button button_flex outline-none border border-bg-white rounded-lg   text-white py-3 px-5 flex items-center "
+              className="button button_flex outline-none border border-bg-white rounded-lg   text-white py-3 px-5 flex items-center hover:text-[#757575] "
             >
               Download CV 
               <div className="ml-2"><FaArrowDown></FaArrowDown></div>
@@ -28,10 +29,13 @@ const About = () => {
           </div>
         </div>
         <div className="right-about grid grid-cols-1 sm:grid-cols-2 gap-8 pt-10 sm:pt-0">
-          <div className="about-item border border-gray-200 rounded p-6 shadow hover:transform hover:translate-y-[-5px] transition-all duration-400">
+          <div className="p-6">
             <div className="abt-text flex flex-col">
               <p className="large-text text-3xl font-bold text-[#8750f7]">
-                50+
+              <CountUp 
+                end={50}
+                duration={3}
+                /> 
               </p>
               <p className=" uppercase font-semibold text-[#ddd] text-lg relative">
                 Projects Completed
@@ -39,10 +43,13 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="about-item border border-[#8750f7] rounded p-6 shadow hover:transform hover:translate-y-[-5px] transition-all duration-400">
+          <div className="p-6">
             <div className="abt-text flex flex-col">
               <p className="large-text text-3xl font-bold text-[#8750f7]">
-                4+
+              <CountUp 
+                end={4}
+                duration={4}
+                />  +
               </p>
               <p className="small-text  uppercase text-[#ddd] text-lg relative">
                 Years of experience
@@ -50,10 +57,15 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="about-item border border-[#8750f7] rounded p-6 shadow hover:transform hover:translate-y-[-5px] transition-all duration-400">
+          <div className="p-6">
             <div className="abt-text flex flex-col">
               <p className="large-text text-3xl font-bold text-[#8750f7]">
-                80+
+                <CountUp 
+                end={80}
+                duration={3}
+                /> 
+                  
+                
               </p>
               <p className="small-text uppercase text-[#ddd] text-lg relative">
                 Happy Clients
@@ -61,10 +73,13 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="about-item border border-gray-200 rounded p-6 shadow hover:transform hover:translate-y-[-5px] transition-all duration-400">
+          <div className="p-6">
             <div className="abt-text flex flex-col">
               <p className="large-text text-3xl font-bold text-[#8750f7]">
-                10+
+              <CountUp 
+                end={10}
+                duration={5}
+                /> 
               </p>
               <p className="small-text  uppercase text-[#ddd] text-lg relative">
                 Customer reviews
