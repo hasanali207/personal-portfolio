@@ -1,4 +1,5 @@
 import React from "react";
+import { FaArrowDown } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -19,10 +20,10 @@ const About = () => {
             <a
               download ="HASANALICV.pdf"
               href="assets/HASANALICV.pdf"
-              className="button button_flex bg-teal-600  text-white py-2 px-4 rounded flex items-center"
+              className="button button_flex outline-none border border-bg-white rounded-lg   text-white py-3 px-5 flex items-center "
             >
               Download CV 
-              <i className="uil uil-download-alt button_icon ml-2"></i>
+              <div className="ml-2"><FaArrowDown></FaArrowDown></div>
             </a>
           </div>
         </div>
