@@ -238,8 +238,8 @@ footer .top {
   width: 70px; /* Adjust size for circle */
   height: 70px;
   position: absolute;
-  top: -35px; /* Half of the height to center vertically */
-  left: 50%;
+  top: 150px; /* Half of the height to center vertically */
+  right: 0;
   transform: translateX(-50%);
   background-color: #ddd; /* Background for the circle */
   border-radius: 50%;
@@ -251,16 +251,12 @@ footer .top {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
-footer .footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 40px; /* Adds spacing above content */
-}
+
 
 footer .footer-content p {
   color: #666;
   font-size: 18px;
+  text-align: center;
 }
 
 footer .footer-nav {
@@ -268,16 +264,6 @@ footer .footer-nav {
   gap: 15px; /* Spacing between links */
 }
 
-footer .footer-nav a {
-  color: #666;
-  text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s;
-}
-
-footer .footer-nav a:hover {
-  color: #333; /* Darker color on hover */
-}
 
 
 
