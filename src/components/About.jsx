@@ -28,7 +28,7 @@ const About = () => {
           </div>
         </div>
         <div className="right-about grid grid-cols-1 sm:grid-cols-2 gap-8 pt-10 sm:pt-0">
-          <div className="about-item border border-gray-200 rounded p-6 shadow hover:transform hover:translate-y-[-5px] transition-all duration-400 hover:border-teal-600 hover:shadow-lg">
+          <div className="about-item border border-gray-200 rounded p-6 shadow hover:transform hover:translate-y-[-5px] transition-all duration-400">
             <div className="abt-text flex flex-col">
               <p className="large-text text-3xl font-bold text-[#8750f7]">
                 50+
@@ -39,7 +39,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="about-item border border-[#8750f7] rounded p-6 shadow hover:transform hover:translate-y-[-5px] transition-all duration-400 hover:border-teal-600 hover:shadow-lg">
+          <div className="about-item border border-[#8750f7] rounded p-6 shadow hover:transform hover:translate-y-[-5px] transition-all duration-400">
             <div className="abt-text flex flex-col">
               <p className="large-text text-3xl font-bold text-[#8750f7]">
                 4+
@@ -50,7 +50,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="about-item border border-[#8750f7] rounded p-6 shadow hover:transform hover:translate-y-[-5px] transition-all duration-400 hover:border-teal-600 hover:shadow-lg">
+          <div className="about-item border border-[#8750f7] rounded p-6 shadow hover:transform hover:translate-y-[-5px] transition-all duration-400">
             <div className="abt-text flex flex-col">
               <p className="large-text text-3xl font-bold text-[#8750f7]">
                 80+
@@ -61,7 +61,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="about-item border border-gray-200 rounded p-6 shadow hover:transform hover:translate-y-[-5px] transition-all duration-400 hover:border-teal-600 hover:shadow-lg">
+          <div className="about-item border border-gray-200 rounded p-6 shadow hover:transform hover:translate-y-[-5px] transition-all duration-400">
             <div className="abt-text flex flex-col">
               <p className="large-text text-3xl font-bold text-[#8750f7]">
                 10+
