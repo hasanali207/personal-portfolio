@@ -1,6 +1,6 @@
 import emailjs from '@emailjs/browser';
 import { useRef } from "react";
-import { FaFacebookSquare, FaRegEnvelope } from "react-icons/fa";
+import { FaFacebookSquare, FaMapMarkerAlt, FaRegEnvelope } from "react-icons/fa";
 import { FaGithub, FaLinkedin, FaRegMessage } from "react-icons/fa6";
 import { MdOutlinePhoneInTalk } from 'react-icons/md';
 import Swal from "sweetalert2";
@@ -107,17 +107,19 @@ const Contact = () => {
  className=" mt-6 w-full lg:w-1/2">
             
             <div className="space-y-4">
-              <p className="flex items-center text-white">
-              
-                <span>Gulshan-1, Dhaka-1212, Bangladesh</span>
-              </p>
-              <p className="flex items-center text-white space-x-4">
+            <div className="flex items-center text-white space-x-4">
                <div className="icon"><MdOutlinePhoneInTalk /></div>
                 <span>+8801861026837</span>
-              </p>
-              <p className="flex items-center text-white space-x-4">
+              </div>
+              <div className="flex items-center text-white space-x-4">
                 <div className="icon"><FaRegEnvelope></FaRegEnvelope></div>                <span>hasandevpro@gmail.com</span>
-              </p>
+              </div>
+              <div className="flex items-center text-white space-x-4">
+                <div className="icon"><FaMapMarkerAlt /></div>
+                <span>Gulshan-1, Dhaka-1212, Bangladesh</span>
+              </div>
+             
+              
 
               
             </div>
