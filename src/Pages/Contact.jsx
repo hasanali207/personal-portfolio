@@ -123,13 +123,13 @@ const Contact = () => {
 
               
             </div>
-            <div className="flex space-x-4 mt-10 "> 
+            {/* <div className="flex space-x-4 mt-10 "> 
                   <a className="text-4xl text-white " href="https://github.com/hasanali207/"><FaGithub />
                   </a>
                   <a  className="text-4xl text-white"  href="https://www.linkedin.com/in/hasanali207/"><FaLinkedin   /></a>
                   <a  className="text-4xl text-white"  href="https://www.facebook.com/hasanali142228/"><FaFacebookSquare />
                   </a>
-              </div>
+              </div> */}
           </div>
 
 
