@@ -1,3 +1,4 @@
+import { FaChevronUp } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
@@ -31,24 +32,20 @@ const Footer = () => {
 
   return (
     
-<footer className="">
- <div className="container flex   lg:flex-row flex-col-reverse justify-between items-center gap-6">
- <aside className="py-4">    
-    <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
-  </aside>
-  <div className="">
-        <ul className=" flex px-1 text-white">
-          {navitems}
-        </ul>
-      </div>
-
-      <div className="gradient-white">
-        <a href="#navbar" className="top"></a>
-      </div>
- </div>
-
-
+<footer>
+  <div className="top">
+    <a href="#navbar" className="flex justify-center items-center">
+      <FaChevronUp />
+    </a>
+  </div>
+  <div className="footer-content">
+    <p>© 2024 Your HasanDevpro</p>
+    <ul className="footer-nav">
+      {navitems}
+    </ul>
+  </div>
 </footer>
+
     
   )
 }
