@@ -33,7 +33,7 @@ const About = () => {
               <p className="large-text text-3xl font-bold text-[#8750f7]">
                 50+
               </p>
-              <p className=" uppercase font-semibold text-white text-lg relative">
+              <p className=" uppercase font-semibold text-[#ddd] text-lg relative">
                 Projects Completed
                
               </p>
@@ -44,7 +44,7 @@ const About = () => {
               <p className="large-text text-3xl font-bold text-[#8750f7]">
                 4+
               </p>
-              <p className="small-text  uppercase text-white text-lg relative">
+              <p className="small-text  uppercase text-[#ddd] text-lg relative">
                 Years of experience
                 
               </p>
@@ -55,7 +55,7 @@ const About = () => {
               <p className="large-text text-3xl font-bold text-[#8750f7]">
                 80+
               </p>
-              <p className="small-text uppercase text-white text-lg relative">
+              <p className="small-text uppercase text-[#ddd] text-lg relative">
                 Happy Clients
                 
               </p>
@@ -66,7 +66,7 @@ const About = () => {
               <p className="large-text text-3xl font-bold text-[#8750f7]">
                 10+
               </p>
-              <p className="small-text  uppercase text-white text-lg relative">
+              <p className="small-text  uppercase text-[#ddd] text-lg relative">
                 Customer reviews
                
               </p>
