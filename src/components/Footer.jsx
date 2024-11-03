@@ -32,6 +32,8 @@ const Footer = () => {
 
   return (
     
+      <div className="pt-32">
+
 <footer>
   <div className="top">
     <a href="#navbar" className="flex justify-center items-center">
@@ -45,6 +47,7 @@ const Footer = () => {
     </ul>
   </div>
 </footer>
+      </div>
 
     
   )

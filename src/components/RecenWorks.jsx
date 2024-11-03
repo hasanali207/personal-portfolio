@@ -72,8 +72,8 @@ const RecentWorks = () => {
                   alt={project.title} 
                 />
               </div>
-              <h3 className="">{project.title}</h3>
-              <p className="">{project.description}</p>
+              <h3 className="text-[#ddd]">{project.title}</h3>
+              <p className="text-[#ddd]">{project.description}</p>
 
               
               
