@@ -41,7 +41,7 @@ const RecentWorks = () => {
 
 
   return (
-    <section className="recent-works">
+    <section className="recent-works" id="projects">
       <div className="container">
         <div className="flex justify-center items-center ">
           <h1 className='text-3xl lg:text-5xl leading-tight font-bold gradient-text py-4'> My Recent Works</h1>

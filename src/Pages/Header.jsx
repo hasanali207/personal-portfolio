@@ -14,7 +14,7 @@ const Header = () => {
       <li className="mr-3 text-lg  ">
         <NavLink className={({ isActive }) =>
               isActive ? 'text-[#757575] focus:text-[#757575]' : 'hover:text-[#757575]'
-            } to="/timeline">Timeline</NavLink>
+            } to="/timeline">Experience</NavLink>
       </li>
       <li className="mr-3 text-lg text-white-700 hover:text-[#757575]">
         <NavLink className={({ isActive }) =>
