@@ -106,7 +106,7 @@ const Contact = () => {
 <div data-aos="fade-left"     data-aos-delay="700"
  className=" mt-6 w-full lg:w-1/2">
             
-            <div className="space-y-4">
+            <div className="space-y-8">
             <div className="flex items-center text-[#ddd] space-x-4">
                <div className="icon"><MdOutlinePhoneInTalk /></div>
                 <span>+8801861026837</span>
