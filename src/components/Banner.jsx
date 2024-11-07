@@ -22,7 +22,7 @@ export default function Banner() {
         <p data-aos="fade-up"     data-aos-delay="1200"  className='text-lg lg:text-xl text-left font-light text-[#ddd]  w-full '>I break down complex user experience problems to create integrity focussed solutions that connect  billions of people</p>
         <div className="">
          <div>
-         <nav className="nav hidden lg:block" aria-label="In-page jump links">
+         <nav data-aos="fade-left"     data-aos-delay="1400"  className="nav hidden lg:block" aria-label="In-page jump links">
           <ul className=" py-4 w-max">
             <li><a className="group flex items-center py-3" target='_blank'
               href="https://drive.google.com/file/d/1jfuH4aMhUWt6U3XCSqv3Z0MXNl4rMOWn/view?usp=sharing">
@@ -36,7 +36,7 @@ export default function Banner() {
                   </nav>
          </div>
 
-         <div className="flex   space-x-4 mt-6 lg:mt-0"> 
+         <div   className="flex   space-x-4 mt-6 lg:mt-0"> 
                   <a className="text-2xl text-white " href="https://github.com/hasanali207/"><FaGithub />
                   </a>
                   <a  className="text-2xl text-white"  href="https://www.linkedin.com/in/hasanali207/"><FaLinkedin   /></a>
