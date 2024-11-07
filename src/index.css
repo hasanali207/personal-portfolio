@@ -170,6 +170,7 @@ border-color: #8750f7;
   color: #fff;
   cursor: pointer;
   border-radius: 20px;
+  transition: all 0.2s;
 }
 
 .category-buttons .active {

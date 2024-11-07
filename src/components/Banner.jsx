@@ -46,7 +46,7 @@ export default function Banner() {
         </div>
       </div>
 
-      <div className='flex items-center mt-20 lg:mt-0'>
+      <div data-aos="fade-down-left"     data-aos-delay="1000"  className='flex items-center mt-20 lg:mt-0'>
           <div className='hero-image flex justify-center items-center gradient-border'>
             <img  src={heroimage} alt="profile-pic" className="align-middle"/>
           </div>

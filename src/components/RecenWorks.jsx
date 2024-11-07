@@ -15,7 +15,7 @@ const RecentWorks = () => {
       .catch(error => console.error("Error fetching data:", error));
   }, []);
 
-  const categories = ["All", "React", "Nextjs", "UX/UI"];
+  const categories = ["All", "React", "Nextjs", "WORDPRESS"];
 
   const filteredProjects = projects.filter(
     (project) => activeCategory === "All" || project.category === activeCategory
