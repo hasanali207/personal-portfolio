@@ -6,23 +6,28 @@ const Header = () => {
   const navitems = (
     <>
      
-      <li className="mr-3 text-lg text-white-700 ">
+      <li className="mr-2 text-lg text-white-700 ">
         <NavLink className={({ isActive }) =>
               isActive ? 'text-[#757575] focus:text-[#757575] ' : 'hover:text-[#757575]'
             } to="/portfolio">Portfolio</NavLink>
       </li>
-      <li className="mr-3 text-lg  ">
+      <li className="mr-2 text-lg  ">
         <NavLink className={({ isActive }) =>
               isActive ? 'text-[#757575] focus:text-[#757575]' : 'hover:text-[#757575]'
             } to="/timeline">Experience</NavLink>
       </li>
-      <li className="mr-3 text-lg text-white-700 hover:text-[#757575]">
+      <li className="mr-2 text-lg text-white-700 hover:text-[#757575]">
         <NavLink className={({ isActive }) =>
               isActive ? 'text-[#757575] focus:text-[#757575]' : 'hover:text-[#757575]'
             } to="/about">About</NavLink>
       </li>
      
-      <li className="mr-3 text-lg text-white-700 hover:text-[#757575]">
+      <li className="mr-2 text-lg text-white-700 hover:text-[#757575]">
+        <NavLink className={({ isActive }) =>
+              isActive ? 'text-[#757575] focus:text-[#757575]' : 'hover:text-[#757575]'
+            } to="/blog">Blog</NavLink>
+      </li>
+      <li className="mr-2 text-lg text-white-700 hover:text-[#757575]">
         <NavLink className={({ isActive }) =>
               isActive ? 'text-[#757575] focus:text-[#757575]' : 'hover:text-[#757575]'
             } to="/contact">Contact</NavLink>
@@ -31,8 +36,8 @@ const Header = () => {
   );
 
   return (
-    <div className="navbar container flex justify-between bg-[#0a192f] h-[92px]" id='navbar'>
-      <div className="navbar-start ">
+    <div className="navbar container flex justify-between bg-[#0a192f]" id='navbar'>
+      <div className="">
         <div className="dropdown z-50">
           <div tabIndex={0} role="button" className="btn text-white btn-ghost lg:hidden">
             <svg
@@ -47,6 +52,7 @@ const Header = () => {
                 strokeWidth="2"
                 d="M4 6h16M4 12h8m-8 6h16" />
             </svg>
+            
           </div>
           <ul
             tabIndex={0}
@@ -57,8 +63,8 @@ const Header = () => {
        
        <div className='flex items-center'>
        <Link to={'/'} className=" "> <img className='w-24 h-24' src={logo} alt="" />   </Link>
-       
-       <a href="mailto:hasandevpro@gmail.com" className= 'hidden md:hidden lg:flex  text-white hover:text-[#757575]'> hasandevpro@gmail.com </a>
+       {/* <h1 className= 'text-xl lg:flex  text-white hover:text-[#757575]'>HasanAli</h1> */}
+       {/* <a href="mailto:hasandevpro@gmail.com" className= 'hidden md:hidden lg:flex  text-white hover:text-[#757575]'> hasandevpro@gmail.com </a> */}
        </div>
          
       </div>
