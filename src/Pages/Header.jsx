@@ -62,7 +62,7 @@ const Header = () => {
         </div>
        
        <div className='flex items-center'>
-       <Link to={'/'} className=" "> <img className='w-96' src={logo} alt="" />   </Link>
+       <Link to={'/'} className=" "> <img className='' src={logo} alt="" />   </Link>
        
        {/* <h1 className= 'text-xl lg:flex  text-white hover:text-[#757575]'>HasanAli</h1> */}
        {/* <a href="mailto:hasandevpro@gmail.com" className= 'hidden md:hidden lg:flex  text-white hover:text-[#757575]'> hasandevpro@gmail.com </a> */}
