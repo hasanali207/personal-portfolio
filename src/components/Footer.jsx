@@ -42,7 +42,7 @@ const Footer = () => {
   </div>
   <div className="flex justify-center items-center flex-col  space-y-7">
 
-  <Link to={'/'} className=" "> <img className='' src={logo} alt="" />   </Link>
+  <Link to={'/'} className="flex justify-center items-center "> <img className='' src={logo} alt="" />   </Link>
   <ul className="flex justify-between items-center text-[#ddd] space-x-6">
       {navitems}
     </ul>

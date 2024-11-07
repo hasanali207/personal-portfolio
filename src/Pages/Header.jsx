@@ -65,7 +65,7 @@ const Header = () => {
        <Link to={'/'} className=" "> <img className='' src={logo} alt="" />   </Link>
        
        {/* <h1 className= 'text-xl lg:flex  text-white hover:text-[#757575]'>HasanAli</h1> */}
-       {/* <a href="mailto:hasandevpro@gmail.com" className= 'hidden md:hidden lg:flex  text-white hover:text-[#757575]'> hasandevpro@gmail.com </a> */}
+       <a href="mailto:hasandevpro@gmail.com" className= 'hidden md:hidden lg:flex  text-white hover:text-[#757575]'> hasandevpro@gmail.com </a>
        </div>
          
       </div>
