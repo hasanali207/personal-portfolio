@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/logo1.png';
+import logo from '../assets/logome.svg';
 import { Link, NavLink } from 'react-router-dom';
 const Header = () => {
 
@@ -62,7 +62,8 @@ const Header = () => {
         </div>
        
        <div className='flex items-center'>
-       <Link to={'/'} className=" "> <img className='w-24 h-24' src={logo} alt="" />   </Link>
+       <Link to={'/'} className=" "> <img className='w-96' src={logo} alt="" />   </Link>
+       
        {/* <h1 className= 'text-xl lg:flex  text-white hover:text-[#757575]'>HasanAli</h1> */}
        {/* <a href="mailto:hasandevpro@gmail.com" className= 'hidden md:hidden lg:flex  text-white hover:text-[#757575]'> hasandevpro@gmail.com </a> */}
        </div>
