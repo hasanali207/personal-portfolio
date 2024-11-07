@@ -5,11 +5,10 @@ import img4 from '../assets/bootstrap.png';
 import img5 from '../assets/react.png';
 import img6 from '../assets/node.png';
 import img7 from '../assets/mongodb.png';
-import img8 from '../assets/wordpress.png';
+import img8 from '../assets/typescript.png';
 import img9 from '../assets/js.png';
 import img10 from '../assets/figma.png';
 import img11 from '../assets/react.png';
-import Marquee from 'react-fast-marquee';
 
 
 export default function Skills() {
@@ -24,7 +23,7 @@ export default function Skills() {
 
 
       <div className="flex  items-center flex-wrap gap-4">
-        <Marquee pauseOnHover >
+       
       {/* item1 */} 
       <div className="flex flex-col justify-center items-center skill-item">
         
@@ -88,7 +87,7 @@ export default function Skills() {
 
 
 
-      </Marquee >
+     
       
       </div>
      
@@ -97,17 +96,9 @@ export default function Skills() {
 
      
       <div className="flex  items-center flex-wrap gap-4 mt-6">
-      <Marquee pauseOnHover direction='right'>
+     
       {/* item1 */} 
-      <div className="flex flex-col justify-center items-center skill-item">
-        
-        <div className='icon-box'>
-          <img className="w-20 h-20" src={img1} alt="HTML" />
-          
-        </div>
-        <p className="text-lg mt-4 text-[#8750f7]">HTML</p>
-               
-      </div>
+     
       {/* item2 */}
       <div className="flex flex-col justify-center items-center skill-item">
         
@@ -158,11 +149,20 @@ export default function Skills() {
         <p className="text-lg mt-4 text-[#8750f7]">MONGODB</p>
                
       </div>
+      <div className="flex flex-col justify-center items-center skill-item">
+        
+        <div className='icon-box'>
+          <img className="w-20 h-20" src={img8} alt="HTML" />
+          
+        </div>
+        <p className="text-lg mt-4 text-[#8750f7]">TYPESCRIPT</p>
+               
+      </div>
 
 
 
 
-      </Marquee></div>
+      </div>
       
 
 
