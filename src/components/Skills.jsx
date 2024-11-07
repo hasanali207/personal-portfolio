@@ -21,28 +21,39 @@ export default function Skills() {
               <p className='text-[#ddd] text-center'>We put your ideas and thus your wishes in the form of a unique web project that <br/> inspires you and you customers.</p>
       </div>
 
-      <div className="flex flex-wrap justify-center items-center w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-2">
 
       {/* item1 */} 
       <div className="flex flex-col justify-center items-center skill-item">
         
         <div className='icon-box'>
-          <img className="w-20 h-20" src={img8} alt="HTML" />
+          <img className="w-20 h-20" src={img1} alt="HTML" />
           
         </div>
-        <p className="text-lg mt-4 text-[#8750f7]">JavaScript</p>
+        <p className="text-lg mt-4 text-[#8750f7]">HTML</p>
                
       </div>
-      {/* item1 */}
+      {/* item2 */}
       <div className="flex flex-col justify-center items-center skill-item">
         
         <div className='icon-box'>
-          <img className="w-20 h-20" src={img6} alt="HTML" />
+          <img className="w-20 h-20" src={img2} alt="CSS3" />
           
         </div>
-        <p className="text-lg mt-4 text-[#8750f7]">Node</p>
+        <p className="text-lg mt-4 text-[#8750f7]">CSS3</p>
                
       </div>
+      {/* item3 */}
+      <div className="flex flex-col justify-center items-center skill-item">
+        
+        <div className='icon-box'>
+          <img className="w-20 h-20" src={img3} alt="Tailwind" />
+          
+        </div>
+        <p className="text-lg mt-4 text-[#8750f7]">TAILWIND</p>
+               
+      </div>
+    {/* item  */}
       <div className="flex flex-col justify-center items-center skill-item">
         
         <div className='icon-box'>
@@ -52,6 +63,17 @@ export default function Skills() {
         <p className="text-lg mt-4  text-[#8750f7] ">React</p>
                
       </div>
+      {/* item */}
+      <div className="flex flex-col justify-center items-center skill-item">
+        
+        <div className='icon-box'>
+          <img className="w-20 h-20" src={img6} alt="HTML" />
+          
+        </div>
+        <p className="text-lg mt-4 text-[#8750f7]">Node</p>
+               
+      </div>
+    
       <div className="flex flex-col justify-center items-center skill-item">
         
         <div className='icon-box'>
@@ -67,6 +89,9 @@ export default function Skills() {
 
       </div>
      
+
+
+
       </div>
 
     </div>
