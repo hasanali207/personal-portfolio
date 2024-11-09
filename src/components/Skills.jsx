@@ -25,7 +25,7 @@ export default function Skills() {
       <div className="flex  items-center justify-center flex-wrap gap-4">
        
       {/* item1 */} 
-      <div className="flex flex-col justify-center items-center skill-item">
+      <div data-aos="fade-right"     data-aos-delay="100" className="flex flex-col justify-center items-center skill-item">
         
         <div className='icon-box'>
           <img className="w-20 h-20" src={img1} alt="HTML" />
@@ -35,7 +35,7 @@ export default function Skills() {
                
       </div>
       {/* item2 */}
-      <div className="flex flex-col justify-center items-center skill-item">
+      <div data-aos="fade-right"     data-aos-delay="200" className="flex flex-col justify-center items-center skill-item">
         
         <div className='icon-box'>
           <img className="w-20 h-20" src={img2} alt="CSS3" />
@@ -45,7 +45,7 @@ export default function Skills() {
                
       </div>
       {/* item3 */}
-      <div className="flex flex-col justify-center items-center skill-item">
+      <div data-aos="fade-right"     data-aos-delay="300" className="flex flex-col justify-center items-center skill-item">
         
         <div className='icon-box'>
           <img className="w-20 h-20" src={img3} alt="Tailwind" />
@@ -55,7 +55,7 @@ export default function Skills() {
                
       </div>
     {/* item  */}
-      <div className="flex flex-col justify-center items-center skill-item">
+      <div data-aos="fade-right"     data-aos-delay="400" className="flex flex-col justify-center items-center skill-item">
         
         <div className='icon-box'>
           <img className="w-20 h-20" src={img5} alt="HTML" />
@@ -65,7 +65,7 @@ export default function Skills() {
                
       </div>
       {/* item */}
-      <div className="flex flex-col justify-center items-center skill-item">
+      <div data-aos="fade-right"     data-aos-delay="500" className="flex flex-col justify-center items-center skill-item">
         
         <div className='icon-box'>
           <img className="w-20 h-20" src={img6} alt="HTML" />
@@ -74,8 +74,8 @@ export default function Skills() {
         <p className="text-lg mt-4 text-[#8750f7]">Node</p>
                
       </div>
-    
-      <div className="flex flex-col justify-center items-center skill-item">
+    {/* item  */}
+      <div data-aos="fade-right"     data-aos-delay="600" className="flex flex-col justify-center items-center skill-item">
         
         <div className='icon-box'>
           <img className="w-20 h-20" src={img7} alt="MongoDB" />
@@ -100,7 +100,7 @@ export default function Skills() {
       {/* item1 */} 
      
       {/* item2 */}
-      <div className="flex flex-col justify-center items-center skill-item">
+      <div data-aos="fade-left"     data-aos-delay="600" className="flex flex-col justify-center items-center skill-item">
         
         <div className='icon-box'>
           <img className="w-20 h-20" src={img2} alt="CSS3" />
@@ -110,7 +110,7 @@ export default function Skills() {
                
       </div>
       {/* item3 */}
-      <div className="flex flex-col justify-center items-center skill-item">
+      <div data-aos="fade-left"     data-aos-delay="500" className="flex flex-col justify-center items-center skill-item">
         
         <div className='icon-box'>
           <img className="w-20 h-20" src={img3} alt="Tailwind" />
@@ -120,7 +120,7 @@ export default function Skills() {
                
       </div>
     {/* item  */}
-      <div className="flex flex-col justify-center items-center skill-item">
+      <div data-aos="fade-left"     data-aos-delay="400" className="flex flex-col justify-center items-center skill-item">
         
         <div className='icon-box'>
           <img className="w-20 h-20" src={img5} alt="HTML" />
@@ -130,7 +130,7 @@ export default function Skills() {
                
       </div>
       {/* item */}
-      <div className="flex flex-col justify-center items-center skill-item">
+      <div data-aos="fade-left"     data-aos-delay="300" className="flex flex-col justify-center items-center skill-item">
         
         <div className='icon-box'>
           <img className="w-20 h-20" src={img6} alt="HTML" />
@@ -140,7 +140,7 @@ export default function Skills() {
                
       </div>
     
-      <div className="flex flex-col justify-center items-center skill-item">
+      <div data-aos="fade-left"     data-aos-delay="200" className="flex flex-col justify-center items-center skill-item">
         
         <div className='icon-box'>
           <img className="w-20 h-20" src={img7} alt="MongoDB" />
@@ -149,7 +149,7 @@ export default function Skills() {
         <p className="text-lg mt-4 text-[#8750f7]">MONGODB</p>
                
       </div>
-      <div className="flex flex-col justify-center items-center skill-item">
+      <div data-aos="fade-left"     data-aos-delay="100" className="flex flex-col justify-center items-center skill-item">
         
         <div className='icon-box'>
           <img className="w-20 h-20" src={img8} alt="HTML" />
