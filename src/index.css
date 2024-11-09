@@ -189,13 +189,21 @@ border-color: #8750f7;
   .projects {
     grid-template-columns: 1fr;
   }
+  .timeline-item {
+    position: relative;
+    padding: 15px 15px;
+  }
 }
 .project-card {
-  padding: 10px;
-  border-radius: 10px;
   color: #fff;
   text-align: left;
+  padding: 16px;
   border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
 }
 
 .project-card {

@@ -65,9 +65,9 @@ const RecentWorks = () => {
               key={project.id} 
               className={`project-card ${zoomEffect ? "zoom-in" : ""}`} // Apply zoom class conditionally
             >
-              <div className="w-full ">
+              <div className="">
                 <img 
-                  className="w-full rounded-lg" 
+                  className="rounded-lg object-cover" 
                   src={project.thumbnail} 
                   alt={project.title} 
                 />
