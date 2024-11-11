@@ -16,9 +16,9 @@ const Home = () => {
        
         
 
-        <section  id='skills'>
+       
          <Skills></Skills>
-        </section>
+        
         <Timeline></Timeline>
        
         <About></About>

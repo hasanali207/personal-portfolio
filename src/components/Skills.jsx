@@ -13,8 +13,8 @@ import img11 from '../assets/react.png';
 
 export default function Skills() {
   return (
-    <div className='bg-[#0a192f] py-20  mx-auto pt-0 lg:pt-6 '>
-      <div className=''> 
+    <div className='max-w-7xl mx-auto pt-0 lg:pt-6 px-4 lg:px-0 '>
+      
      <div className="flex flex-col justify-center items-center mb-10">
       
              <h1 className='text-5xl leading-tight font-bold gradient-text py-4'> My Skills</h1>
@@ -169,6 +169,6 @@ export default function Skills() {
 
       </div>
 
-    </div>
+    
   )
 }
