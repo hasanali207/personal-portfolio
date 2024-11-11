@@ -194,10 +194,8 @@ border-color: #8750f7;
     padding: 15px 15px;
   }
   .category-buttons button {
-    
     padding: 10px 20px;
     margin: 0 2px;
-   
   }
 }
 .project-card {
@@ -209,7 +207,6 @@ border-color: #8750f7;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
 }
 
 .project-card {
@@ -285,10 +282,6 @@ footer .footer-nav {
   display: flex;
   gap: 15px; /* Spacing between links */
 }
-
-
-
-
 
 @tailwind base;
 @tailwind components;
