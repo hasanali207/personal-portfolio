@@ -8,8 +8,10 @@ const Main = () => {
   return (
     <div>
         <Header></Header>
-        <Outlet></Outlet>
-        <Contact></Contact>
+       <div className='max-w-7xl mx-auto'>
+       <Outlet></Outlet>
+       </div>
+        {/* <Contact></Contact> */}
         <Footer></Footer>
     </div>
   )

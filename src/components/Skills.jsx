@@ -13,7 +13,7 @@ import img11 from '../assets/react.png';
 
 export default function Skills() {
   return (
-    <div className='max-w-7xl mx-auto pt-0 lg:pt-6 px-4 lg:px-0 '>
+    <div className='max-w-7xl mx-auto pt-0 lg:pt-6 px-4 lg:px-0 overflow-x-hidden'>
       
      <div className="flex flex-col justify-center items-center mb-10">
       
