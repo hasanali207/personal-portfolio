@@ -15,7 +15,7 @@ const RecentWorks = () => {
       .catch(error => console.error("Error fetching data:", error));
   }, []);
 
-  const categories = ["All", "React", "Nextjs"];
+  const categories = ["All", "React", "Nextjs", "WP"];
 
   const filteredProjects = projects.filter(
     (project) => activeCategory === "All" || project.category === activeCategory
@@ -42,7 +42,7 @@ const RecentWorks = () => {
 
   return (
     <section className="recent-works" id="projects">
-      <div className="container">
+      <div className="">
         <div className="flex justify-center items-center ">
           <h1 className='text-3xl lg:text-5xl leading-tight font-bold gradient-text py-4'> My Recent Works</h1>
         </div>

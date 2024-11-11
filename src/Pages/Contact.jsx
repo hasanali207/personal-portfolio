@@ -32,7 +32,7 @@ const Contact = () => {
 
   return (
     <section className="z-0 px-10 lg:px-20 ">
-      <div className='container px-4 lg:px-0'>
+      <div className=' px-4 lg:px-0'>
       <div className="">
       <p className="pt-2 pb-4 text-5xl text-white leading-tight font-bold gradient-text py-4 ">
             Let’s work together!

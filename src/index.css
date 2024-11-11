@@ -11,7 +11,7 @@ html {
 body {
   font-family: "Sora", sans-serif;
   font-optical-sizing: auto;
-  background: #0a192f;
+  /* background: #0a192f; */
 }
 
 * {
@@ -22,10 +22,6 @@ body {
   scrollbar-width: thin;
   -webkit-scrollbar-color: #8750f7 #2a1454;
   scrollbar-color: #8750f7 #2a1454;
-}
-.container {
-  max-width: 1160px !important;
-  margin: 0 auto;
 }
 
 .btn-con {

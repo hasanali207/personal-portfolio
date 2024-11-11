@@ -7,7 +7,8 @@ export default function Banner() {
     <>
 
 <section className="z-0  bg-[#0a192f] text-white p-8" id='header'>
-  <div className='container mx-auto flex flex-col lg:flex-row justify-between items-center '>
+  <div className='   '>
+      <div className="flex flex-col lg:flex-row justify-between items-center">
       <div className="w-full lg:w-1/2">
         <div data-aos="fade-up"     data-aos-delay="600"  className=" text-3xl lg:text-5xl font-bold mb-2">
           
@@ -51,6 +52,7 @@ export default function Banner() {
             <img  src={heroimage} alt="profile-pic" className="align-middle"/>
           </div>
           
+      </div>
       </div>
       </div>
     </section>

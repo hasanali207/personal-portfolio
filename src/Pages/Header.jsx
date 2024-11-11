@@ -36,8 +36,9 @@ const Header = () => {
   );
 
   return (
-    <div className="navbar container flex justify-between bg-[#0a192f]" id='navbar'>
-      <div className="">
+    <section className='w-full bg-[#0a192f]'> 
+    <div className="container" id='navbar'>
+      <div className="navbar flex justify-between ">
         <div className="dropdown z-50">
           <div tabIndex={0} role="button" className="btn text-white btn-ghost lg:hidden">
             <svg
@@ -68,7 +69,7 @@ const Header = () => {
        <a href="mailto:hasandevpro@gmail.com" className= 'hidden md:hidden lg:flex  text-white hover:text-[#757575]'> hasandevpro@gmail.com </a>
        </div>
          
-      </div>
+      
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-white">
           {navitems}
@@ -80,7 +81,9 @@ const Header = () => {
           <Link to={'/contact'}>Hire Me</Link>
         </button>
       </div>
+      </div>
     </div>
+    </section>
   );
 };
 
