@@ -19,9 +19,9 @@ const Home = () => {
        
          <Skills></Skills>
         
-        {/* <Timeline></Timeline> */}
+        <Timeline></Timeline>
        
-        {/* <About></About> */}
+        <About></About>
        
         
 

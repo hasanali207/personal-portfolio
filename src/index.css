@@ -194,6 +194,9 @@ border-color: #8750f7;
     padding: 10px 20px;
     margin: 0 2px;
   }
+  .hero-image{
+    height: 60vh;
+  }
 }
 .project-card {
   color: #fff;

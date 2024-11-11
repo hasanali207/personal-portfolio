@@ -50,9 +50,9 @@ const About = () => {
   }, []);
 
   return (
-    <section className="p-10 bg-[#0a192f] section sec2 about" id="about">
+    <section className="bg-[#0a192f] section sec2 about px-4 lg:px-0" id="about">
       <div className="flex justify-center items-center ">
-        <div className="text-5xl leading-tight font-bold gradient-text py-4 ">
+        <div className=" text-4xl lg:text-5xl leading-tight font-bold gradient-text py-4 ">
           About Me
         </div>
       </div>

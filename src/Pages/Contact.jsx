@@ -31,10 +31,11 @@ const Contact = () => {
   };
 
   return (
-    <section className="z-0 px-10 lg:px-20 ">
+    <section className="">
+      
       <div className=' px-4 lg:px-0'>
-      <div className="">
-      <p className="pt-2 pb-4 text-5xl text-white leading-tight font-bold gradient-text py-4 ">
+      
+      <p className="text-3xl lg:text-5xl text-white leading-tight font-bold gradient-text">
             Let’s work together!
             </p>
             <p className="pt-2 pb-4 text-lg text-white">
@@ -42,7 +43,7 @@ const Contact = () => {
             </p>
       </div>   
       
-        <div className="flex flex-col lg:flex-row justify-between space-x-10 w-full  ">
+        <div className="flex flex-col lg:flex-row justify-between px-4 lg:px-0">
           
          
           <form  data-aos="fade-up"     data-aos-delay="600"  ref={form} onSubmit={sendEmail}  className="py-4 lg:py-6 w-full lg:w-1/2">
@@ -104,7 +105,7 @@ const Contact = () => {
   </div>
 </form>
 <div data-aos="fade-up"     data-aos-delay="400"
- className=" mt-6 w-full lg:w-1/2">
+ className="w-full lg:w-1/2 mt-6">
             
             <div className="space-y-8">
             <div className="flex items-center text-[#ddd] space-x-4">
@@ -135,7 +136,7 @@ const Contact = () => {
 
 
         </div>
-        </div>
+        
       </section>
       
    

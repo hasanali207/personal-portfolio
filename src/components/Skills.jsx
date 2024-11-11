@@ -13,16 +13,16 @@ import img11 from '../assets/react.png';
 
 export default function Skills() {
   return (
-    <div className='max-w-7xl mx-auto pt-0 lg:pt-6 px-4 lg:px-0 overflow-x-hidden'>
+    <div className='pt-0 lg:pt-6 px-2 lg:px-0 overflow-x-hidden'>
       
      <div className="flex flex-col justify-center items-center mb-10">
       
-             <h1 className='text-5xl leading-tight font-bold gradient-text py-4'> My Skills</h1>
+             <h1 className='text-4xl lg:text-5xl leading-tight font-bold gradient-text py-4'> My Skills</h1>
               <p className='text-[#ddd] text-sm lg:text-lg text-center max-w-sm lg:max-w-xl break-words'>We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
       </div>
 
 
-      <div className="flex  items-center justify-center flex-wrap gap-4">
+      <div className="flex  items-center justify-center flex-wrap gap-0 lg:gap-4">
        
       {/* item1 */} 
       <div data-aos="fade-right"     data-aos-delay="100" className="flex flex-col justify-center items-center skill-item">
@@ -95,7 +95,7 @@ export default function Skills() {
      
 
      
-      <div className="flex  items-center  justify-center flex-wrap gap-4 mt-6">
+      <div className="flex  items-center  justify-center flex-wrap gap-0 lg:gap-4 mt-6">
      
       {/* item1 */} 
      
