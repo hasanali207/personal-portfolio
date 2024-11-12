@@ -110,14 +110,24 @@ const Contact = () => {
             <div className="space-y-8">
             <div className="flex items-center text-[#ddd] space-x-4">
                <div className="icon"><MdOutlinePhoneInTalk /></div>
-                <span>+8801861026837</span>
+                <div>
+                  <p>Phone</p>
+                <h3 className='mt-1 text-lg cursor-pointer hover:text-[#8750f7]'>+8801861026837</h3>
+                </div>
               </div>
               <div className="flex items-center text-[#ddd] space-x-4">
-                <div className="icon"><FaRegEnvelope></FaRegEnvelope></div>                <span>hasandevpro@gmail.com</span>
+                <div className="icon"><FaRegEnvelope></FaRegEnvelope></div>                
+                <div>
+                  <p>Email</p>
+                <h3 className='mt-1 text-lg cursor-pointer hover:text-[#8750f7]'>hasandevpro@gmail.com</h3>
+                </div>
               </div>
               <div className="flex items-center text-[#ddd] space-x-4">
                 <div className="icon"><FaMapMarkerAlt /></div>
-                <span>Gulshan-1, Dhaka-1212, Bangladesh</span>
+                <div>
+                  <p>Address</p>
+                <h3 className='mt-1 text-lg cursor-pointer hover:text-[#8750f7]' >Gulshan-1, Dhaka-1212, Bangladesh</h3>
+                </div>
               </div>
              
               
