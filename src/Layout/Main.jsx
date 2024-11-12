@@ -10,8 +10,9 @@ const Main = () => {
         <Header></Header>
        <div className='max-w-7xl mx-auto'>
        <Outlet></Outlet>
+       <Contact></Contact>
        </div>
-        <Contact></Contact>
+        
         <Footer></Footer>
     </div>
   )
