@@ -18,7 +18,7 @@ export default function Banner() {
         Web Developer  + <br/>  UX Designer
         </h1>
        
-        <p data-aos="fade-up"     data-aos-delay="1200"  className='text-lg lg:text-xl text-left font-light text-[#ddd]  w-full mt-6'>I break down complex user experience problems to create integrity focussed solutions that connect  billions of people</p>
+        <p data-aos="fade-up"     data-aos-delay="1200"  className=' w-full lg:w-[31rem] text-lg lg:text-xl text-left font-light text-[#ddd]  mt-6'>I break down complex user experience problems to create integrity focussed solutions that connect  billions of people</p>
         <div className="">
          <div>
          <nav data-aos="fade-left"     data-aos-delay="1400"  className="nav hidden lg:block" aria-label="In-page jump links">
