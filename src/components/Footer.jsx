@@ -35,11 +35,11 @@ const Footer = () => {
       <div className="pt-10">
 
 <footer>
-  {/* <div className="top">
+  <div className="top">
     <a href="#navbar" className="flex justify-center items-center">
       <FaChevronUp />
     </a>
-  </div> */}
+  </div>
   <div className="flex justify-center items-center flex-col  space-y-7">
 
   <Link to={'/'} className="flex justify-center items-center "> <img className='' src={logo} alt="" />   </Link>

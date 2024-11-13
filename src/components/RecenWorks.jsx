@@ -51,7 +51,7 @@ const RecentWorks = () => {
   };
 
   return (
-    <section className="recent-works" id="projects">
+    <section className="recent-works portfolio" id="projects">
       <div>
         {/* Section Title */}
         <div className="flex justify-center items-center">
