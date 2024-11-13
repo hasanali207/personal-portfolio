@@ -4,7 +4,6 @@ import {
 } from "react-router-dom";
 import Main from "../Layout/Main";
 import Home from "../Pages/Home";
-import Contact from "../Pages/Contact";
 import About from "../components/About";
 import Portfolio from "../components/Portfolio";
 import Timeline from "../components/Timeline";
