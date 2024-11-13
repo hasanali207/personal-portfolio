@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const RecentWorks = () => {
@@ -92,8 +94,21 @@ const RecentWorks = () => {
                 }
               </div>
 
-             <Link to={`/portfolio/${project.id}`}><button  className="text-center btn bg-[#ccc] mt-4 w-full">Details</button></Link>
+            <div className="flex justify-between items-center"> 
+            
+               <div className="flex gap-10">
+               <a className="text-2xl text-[#ddd]" title="Live Link" href={project.liveLink}  target="_blank" rel="noopener noreferrer">
+                  <FaExternalLinkAlt />
+                  </a>
+                <a className="text-2xl text-[#ddd]" title="Github Link" href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                  <FaGithub />
+                </a>
+               </div>
+               <div>
+             <Link to={`/portfolio/${project.id}`}><button  className="text-center text-sm text-white bg-transparent btn outline-none p-4 bg-[#ccc] mt-4 hover:bg-transparent hover:text-[#ddd] ">View Details</button></Link>
+             </div>
 
+            </div>
              
             </div>
           ))}

@@ -199,10 +199,10 @@ border-color: #8750f7;
   }
 }
 .project-card {
-  color: #fff;
+
   text-align: left;
-  padding: 16px;
-  border: 1px solid #707070;
+  padding: 8px;
+  border: 1px solid #636161   ;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
