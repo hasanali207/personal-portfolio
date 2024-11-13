@@ -137,7 +137,7 @@ const RecentWorks = () => {
                   </a>
                 </div>
                 <Link to={`/portfolio/${project.id}`}>
-                  <button className="btn text-sm text-white bg-[#ccc] hover:bg-transparent hover:text-[#ddd]">
+                  <button className="text-sm bg-transparent border p-2 rounded-md text-white hover:bg-transparent hover:text-[#757575]">
                     View Details
                   </button>
                 </Link>
