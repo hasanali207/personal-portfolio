@@ -176,7 +176,7 @@ border-color: #8750f7;
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(2, 40%);
+  grid-template-columns: repeat(2, 35%);
   justify-content: center;
   gap: 40px;
   margin-top: 20px;
