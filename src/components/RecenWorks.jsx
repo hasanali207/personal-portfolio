@@ -66,7 +66,7 @@ const RecentWorks = () => {
             <button
               key={category}
               className={`btn ${
-                activeCategory === category ? "active" : ""
+                activeCategory === category ? "active" : "bg-none hover:bg-transparent"
               }`}
               onClick={() => handleCategoryChange(category)}
             >
@@ -82,12 +82,12 @@ const RecentWorks = () => {
               key={project.id}
               className={`project-card ${
                 zoomEffect ? "zoom-in" : ""
-              } rounded-lg overflow-hidden shadow-lg p-4 bg-[#333]`}
+              } rounded-lg overflow-hidden shadow-lg p-4`}
             >
               {/* Project Thumbnail */}
               <div>
                 <img
-                  className="rounded-lg object-cover w-full h-48"
+                  className="rounded-lg object-fill w-full h-48"
                   src={project.thumbnail}
                   alt={project.title}
                 />
