@@ -26,7 +26,7 @@ const Timeline = () => {
             Tushbhander, R. M. M. P Government High School. 
           </p>
         </div>
-        <div data-aos="fade-up"     data-aos-delay="1000"  className="timeline-item">
+        <div data-aos="fade-up"     data-aos-delay="900"  className="timeline-item">
          
           <p className="tl-duration timeline-date   text-xl uppercase font-extrabold ">
             2017 - 2019
@@ -39,7 +39,7 @@ const Timeline = () => {
           Government Karim Uddin Public College. 
           </p>
         </div>
-        <div data-aos="fade-up"     data-aos-delay="1200"  className="timeline-item">
+        <div data-aos="fade-up"     data-aos-delay="1000"  className="timeline-item">
          
           <p className="tl-duration timeline-date   text-xl uppercase font-extrabold ">
           2019 - present
@@ -65,7 +65,7 @@ const Timeline = () => {
          <h1 className='text-3xl lg:text-5xl leading-tight font-bold gradient-text'> My Experience</h1>
            </div>
 
-           <div data-aos="fade-up"     data-aos-delay="800"  className="timeline-item">
+           <div data-aos="fade-up"     data-aos-delay="900"  className="timeline-item">
          
          <p className="tl-duration timeline-date   text-xl uppercase font-extrabold ">
          2019 - 2021
@@ -91,7 +91,7 @@ const Timeline = () => {
        </div>    
        
 
-       <div data-aos="fade-up"     data-aos-delay="1200"  className="timeline-item">
+       <div data-aos="fade-up"     data-aos-delay="1100"  className="timeline-item">
          
          <p className="tl-duration timeline-date   text-xl uppercase font-extrabold ">
          2024 

@@ -10,17 +10,15 @@ export default function Banner() {
   <div className='   '>
       <div className="flex flex-col lg:flex-row justify-between items-center">
       <div className="w-full lg:w-1/2">
-        <div data-aos="fade-up"     data-aos-delay="600"  className=" text-3xl lg:text-5xl font-bold mb-2">
+        <h3 data-aos="fade-up"     data-aos-delay="600"  className=" text-3xl lg:text-5xl font-bold text-[#ddd]">
           
           I am HasanAli
-        </div>
-        <div data-aos="fade-up"     data-aos-delay="1000"  className=" text-4xl lg:text-6xl  leading-tight font-bold gradient-text py-4 ">
-        Web Developer  + <br/> UX Designer
-
+        </h3>
+        <h1 data-aos="fade-up"     data-aos-delay="1000"  className="text-4xl lg:text-6xl  leading-tight font-bold gradient-text mt-6">
+        Web Developer  + <br/>  UX Designer
+        </h1>
        
-        </div>
-       
-        <p data-aos="fade-up"     data-aos-delay="1200"  className='text-lg lg:text-xl text-left font-light text-[#ddd]  w-full '>I break down complex user experience problems to create integrity focussed solutions that connect  billions of people</p>
+        <p data-aos="fade-up"     data-aos-delay="1200"  className='text-lg lg:text-xl text-left font-light text-[#ddd]  w-full mt-6'>I break down complex user experience problems to create integrity focussed solutions that connect  billions of people</p>
         <div className="">
          <div>
          <nav data-aos="fade-left"     data-aos-delay="1400"  className="nav hidden lg:block" aria-label="In-page jump links">

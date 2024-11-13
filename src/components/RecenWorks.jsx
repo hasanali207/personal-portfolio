@@ -106,7 +106,7 @@ const RecentWorks = () => {
                   project.technologies.map((tech, index) => (
                     <img
                       key={index}
-                      className="h-10 cursor-pointer"
+                      className="h-8 cursor-pointer"
                       src={tech.url}
                       title={tech.title}
                       alt={tech.title}
