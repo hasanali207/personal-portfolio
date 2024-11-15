@@ -3,7 +3,7 @@ import Skills from '../components/Skills'
 import Timeline from '../components/Timeline'
 import Banner from '../components/Banner'
 import About from '../components/About'
-import RecentWorks from '../components/RecenWorks'
+import RecentWorks from '../components/RecentWorks'
 
 const Home = () => {
   return (

@@ -8,6 +8,7 @@ import Portfolio from "../components/Portfolio";
 import Timeline from "../components/Timeline";
 import PortfolioDetails from "../components/PortfolioDetails";
 import Contact from "../Pages/Contact";
+import RecentWorks from "../components/RecentWorks";
 
 
 const router = createBrowserRouter([
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
       },
       {
           path: "portfolio",    
-          element: <Portfolio></Portfolio>,
+          element: <RecentWorks></RecentWorks>,
       },
       {
         path: "portfolio/:id",
