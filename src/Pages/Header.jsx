@@ -37,9 +37,9 @@ const Header = () => {
 
   return (
     <section className='w-full bg-[#0a192f]'> 
-    <div className="container" id='navbar'>
-      <div className="navbar flex justify-between ">
-        <div className="dropdown z-50">
+    <div className="flex justify-between items-center" id='navbar'>
+        
+        <div className="dropdown z-50 lg:hidden">
           <div tabIndex={0} role="button" className="btn text-white btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -68,21 +68,26 @@ const Header = () => {
        {/* <h1 className= 'text-xl lg:flex  text-white hover:text-[#757575]'>HasanAli</h1> */}
        <a href="mailto:hasandevpro@gmail.com" className= 'hidden md:hidden lg:flex  text-white hover:text-[#757575]'> hasandevpro@gmail.com </a>
        </div>
+
          
-      
+     
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1 text-white">
           {navitems}
         </ul>
       </div>
 
-      <div>
+      <div className=''>
         <button className="text-2xl font-bold   w-36  bg-gradient-to-r from-primary via-[#8750f7] to-[#ff00d3] bg-300% text-transparent bg-clip-text animate-gradient ">
           <Link to={'/contact'}>Hire Me</Link>
         </button>
       </div>
+      
       </div>
-    </div>
+
+
+      
+   
     </section>
   );
 };
