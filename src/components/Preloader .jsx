@@ -41,7 +41,7 @@ const Preloader = () => {
       }`}
     >
       <h1
-        className="text-2xl text-white tracking-widest"
+        className="text-2xl font-light text-[#ddd] tracking-widest"
         style={{ letterSpacing: '30px' }}
       >
         {loadingText}
