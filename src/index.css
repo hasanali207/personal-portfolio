@@ -299,6 +299,15 @@ footer .footer-nav {
 }
 
 
+.preloader {
+  transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
+  transform: translateY(0); /* Initial position */
+}
+
+.slide-up {
+  transform: translateY(-100%); /* Slide-up to hide */
+  opacity: 0; /* Fade out for smooth transition */
+}
 
 
 
