@@ -6,7 +6,7 @@ export default function Banner() {
   return (
     <>
 
-<section className="z-0 bg-[#0a192f] text-white p-8 overflow-x-hidden" id='header'>
+<section className="z-0 bg-[#0a192f] text-white p-8 overflow-x-hidden px-8 lg:px-20" id='header'>
   <div className='   '>
       <div className="flex flex-col lg:flex-row justify-between items-center">
       <div className="w-full lg:w-1/2">

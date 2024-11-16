@@ -36,7 +36,7 @@ const Header = () => {
   );
 
   return (
-    <section className='w-full bg-[#0a192f]'> 
+    <section className='w-full bg-[#0a192f] px-12 py-4'> 
     <div className="flex justify-between items-center" id='navbar'>
         
         <div className="dropdown z-50 lg:hidden">
@@ -66,23 +66,23 @@ const Header = () => {
        <Link to={'/'} className=" "> <img className='' src={logo} alt="" />   </Link>
        
        {/* <h1 className= 'text-xl lg:flex  text-white hover:text-[#757575]'>HasanAli</h1> */}
-       <a href="mailto:hasandevpro@gmail.com" className= 'hidden md:hidden lg:flex  text-white hover:text-[#757575]'> hasandevpro@gmail.com </a>
+       <a href="mailto:hasandevpro@gmail.com" className= 'hidden lg:flex  text-white hover:text-[#757575]'> hasandevpro@gmail.com </a>
        </div>
 
          
      
-      <div className="navbar-end hidden lg:flex">
+      <div className="navbar-end hidden lg:flex w-[80%]">
         <ul className="menu menu-horizontal px-1 text-white">
           {navitems}
         </ul>
-      </div>
+      
 
-      <div className=''>
+     
         <button className="text-2xl font-bold   w-36  bg-gradient-to-r from-primary via-[#8750f7] to-[#ff00d3] bg-300% text-transparent bg-clip-text animate-gradient ">
           <Link to={'/contact'}>Hire Me</Link>
         </button>
-      </div>
       
+        </div>
       </div>
 
 
