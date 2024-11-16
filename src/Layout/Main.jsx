@@ -3,14 +3,14 @@ import { Outlet } from 'react-router-dom';
 import Preloader from '../components/Preloader ';
 import Header from '../Pages/Header';
 import Footer from '../components/Footer';
-const App = () => {
+const Main = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   // Hide Preloader after 2 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // You can adjust the time if needed
+    }, 1800); // You can adjust the time if needed
 
     return () => clearTimeout(timer);
   }, []);
@@ -29,4 +29,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Main;

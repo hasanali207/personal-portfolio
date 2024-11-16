@@ -304,10 +304,6 @@ footer .footer-nav {
   transform: translateY(0); /* Initial position */
 }
 
-.slide-up {
-  transform: translateY(-100%); /* Slide-up to hide */
-  opacity: 0; /* Fade out for smooth transition */
-}
 
 
 
