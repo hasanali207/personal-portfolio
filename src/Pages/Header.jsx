@@ -71,7 +71,7 @@ const Header = () => {
           </Link>
           <a
             href="mailto:hasandevpro@gmail.com"
-            className="hidden lg:flex text-white hover:text-[#757575] ml-4"
+            className="hidden lg:flex text-white hover:text-[#757575]"
           >
             hasandevpro@gmail.com
           </a>
