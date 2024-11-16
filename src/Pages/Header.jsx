@@ -26,7 +26,7 @@ const Header = () => {
   };
 
   return (
-    <section className="w-full bg-[#0a192f] px-12 py-4" id="header">
+    <section className="w-full bg-[#0a192f] px-12 pb-4 pt-2" id="header">
       <div className="flex justify-between items-center" id="navbar">
         {/* Mobile Menu */}
         <div className="dropdown z-50 lg:hidden">
