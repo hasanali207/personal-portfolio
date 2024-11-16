@@ -8,21 +8,25 @@ import Contact from '../Pages/Contact'
 const Home = () => {
   return (
     <div>
+        
+        
         <Banner></Banner>
 
               
+       <div id="portfolio">
        <RecentWorks></RecentWorks>
+       </div>
        
        
         
 
        
-         <Skills></Skills>
+        <div id="skills"> <Skills></Skills></div>
         
-        <Timeline></Timeline>
+        <div id="experience"><Timeline></Timeline></div>
        
-        <About></About>
-        <Contact></Contact>
+        <div id="about"><About></About></div>
+        <div id="contact"><Contact></Contact></div>
         
 
     </div>
