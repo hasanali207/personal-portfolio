@@ -2,10 +2,38 @@ import React, { useState, useEffect } from "react";
 import { FaChevronUp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import logo from "../assets/logome.svg";
+import Preloader from "./Preloader ";
 
 const Footer = () => {
   // State to control the visibility of the "Back to Top" button
   const [showTopButton, setShowTopButton] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [activeId, setActiveId] = useState("");
+
+    // List of menu items with corresponding section IDs
+    const menuItems = [
+      { name: "Portfolio", id: "portfolio" },
+      { name: "Experience", id: "experience" },
+      { name: "Skills", id: "skills" },
+      { name: "About", id: "about" },
+    ];
+
+    const handleScrollToSection = async (id) => {
+      setIsLoading(true); // Start preloading
+      setActiveId(id); // Set active id
+  
+      // Wait for a brief moment (e.g., 500ms) to show the preloader
+      await new Promise((resolve) => setTimeout(resolve, 500));
+  
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+  
+      // Stop preloading after scrolling
+      setTimeout(() => setIsLoading(false), 500); // Hide preloader after 500ms
+    };
+
 
   // Function to handle scrolling to top
   const handleScrollToTop = () => {
@@ -38,6 +66,8 @@ const Footer = () => {
 
   return (
     <div className="pt-10">
+      {isLoading && <Preloader></Preloader>}
+
       <footer>
         {/* Back to Top Button */}
         {showTopButton && (
@@ -51,12 +81,40 @@ const Footer = () => {
           </div>
         )}
 
-        <div className="flex justify-center items-center flex-col space-y-7">
-          <Link to={"/"} className="flex justify-center items-center">
+        
+         
+
+          <div className="flex justify-center items-center flex-col space-y-7">
+          <Link to="/" onClick={() => handleScrollToSection("header")}>
             <img src={logo} alt="Logo" />
           </Link>
+
+          <div className="" >
+          <ul className="grid  grid-cols-2 lg:grid-cols-4  gap-5 lg:gap-0 text-white space-x-0 lg:space-x-6">
+            {menuItems.map((item) => (
+              <li
+                key={item.id}
+                className={`text-lg cursor-pointer ${
+                  activeId === item.id ? "text-[#757575]" : "hover:text-[#757575]"
+                }`}
+                onClick={() => handleScrollToSection(item.id)}
+              >
+                {item.name}
+              </li>
+            ))}
+          </ul>
+          </div>
+
+
           <p className="text-[#ddd]">© 2024 HasanDevpro</p>
         </div>
+
+        
+
+
+         
+
+        
       </footer>
     </div>
   );
