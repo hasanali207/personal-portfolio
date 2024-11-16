@@ -56,7 +56,7 @@ const About = () => {
           About Me
         </div>
       </div>
-      <div className="about-container grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="about-container grid grid-cols-1 lg:grid-cols-2 mt-0 lg:mt-4 gap-8">
         <div data-aos="zoom-in-down"     data-aos-delay="300" className="left-about pr-0 lg:pr-20">
           <p className="py-4 leading-8 text-[#ddd]">
             My name is Hasan Ali. I am a professional and enthusiastic programmer in my daily life.

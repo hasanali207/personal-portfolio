@@ -38,12 +38,12 @@ const Contact = () => {
       <p className="text-3xl lg:text-5xl text-white leading-tight font-bold gradient-text">
             Let’s work together!
             </p>
-            <p className="pt-2 pb-4 text-lg text-white">
-            I design and code beautifully simple things and i love what i do. <br/> Just simple like that!
+            <p className="pt-2 pb-4 text-lg text-white w-full  lg:w-[40%]">
+            I design and code beautifully simple things and i love what i do. Just simple like that!
             </p>
       </div>   
       
-        <div className="flex flex-col lg:flex-row justify-between gap-10">
+        <div className="flex flex-col lg:flex-row justify-between gap-10 mt-4">
           
          
           <form  data-aos="fade-up"     data-aos-delay="600"  ref={form} onSubmit={sendEmail}  className="py-4 lg:py-6 w-full lg:w-1/2">
