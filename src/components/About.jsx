@@ -57,7 +57,7 @@ const About = () => {
         </div>
       </div>
       <div className="about-container grid grid-cols-1 lg:grid-cols-2 mt-0 lg:mt-4 gap-8">
-        <div data-aos="zoom-in-down"     data-aos-delay="300" className="left-about pr-0 lg:pr-20">
+        <div data-aos="zoom-in-down"     data-aos-delay="600" className="left-about pr-0 lg:pr-20">
           <p className="py-4 leading-8 text-[#ddd]">
             My name is Hasan Ali. I am a professional and enthusiastic programmer in my daily life.
             I am a quick learner with a self-learning attitude. I love to learn and explore new
@@ -82,7 +82,7 @@ const About = () => {
         </div>
 
 
-        <div data-aos="zoom-in-up"     data-aos-delay="400" className="right-about grid grid-cols-1 sm:grid-cols-2 gap-8 pt-10 sm:pt-0">
+        <div data-aos="zoom-in-up"     data-aos-delay="800" className="right-about grid grid-cols-1 sm:grid-cols-2 gap-8 pt-10 sm:pt-0">
           <div className="p-6">
             <div className="abt-text flex flex-col">
               <p ref={projectsRef} className="large-text text-3xl font-bold text-[#8750f7]">

@@ -18,7 +18,7 @@ const RecentWorks = () => {
   }, []);
 
   // Define project categories
-  const categories = ["All", "React", "Nextjs", "WP"];
+  const categories = ["All", "React", "Nextjs", "WP", "Node", "Web", "Full"];
 
   // Filter projects based on active category
   const filteredProjects = projects.filter(
@@ -61,7 +61,7 @@ const RecentWorks = () => {
         </div>
 
         {/* Category Buttons */}
-        <div className="category-buttons flex justify-center gap-4 mb-4">
+        <div className="category-buttons flex justify-center flex-wrap gap-4 mb-4">
           {categories.map((category) => (
             <button
               key={category}
@@ -75,76 +75,84 @@ const RecentWorks = () => {
           ))}
         </div>
 
-        {/* Projects Grid */}
-        <div className="projects">
-          {filteredProjects.slice(0, visibleCount).map((project) => (
-            <div
-              key={project.id}
-              className={`project-card ${
-                zoomEffect ? "zoom-in" : ""
-              } rounded-lg overflow-hidden shadow-lg p-4`}
-            >
-              {/* Project Thumbnail */}
-              <div>
-                <img
-                  className="rounded-lg object-fill w-full h-48"
-                  src={project.thumbnail}
-                  alt={project.title}
-                />
-              </div>
-
-              {/* Project Title and Description */}
-              <h3 className="text-[#ddd] mt-4">{project.title}</h3>
-              <p className="text-[#ddd] mt-2">
-                {getShortText(project.description, 25)}
-              </p>
-
-              {/* Project Technologies */}
-              <div className="flex flex-wrap items-center gap-2 mt-4">
-                <h1 className="text-[#ddd] w-full">Technologies:</h1>
-                {Array.isArray(project.technologies) &&
-                  project.technologies.map((tech, index) => (
-                    <img
-                      key={index}
-                      className="h-8 cursor-pointer"
-                      src={tech.url}
-                      title={tech.title}
-                      alt={tech.title}
-                    />
-                  ))}
-              </div>
-
-              {/* Project Links */}
-              <div className="flex justify-between items-center pt-6">
-                <div className="flex gap-6">
-                  <a
-                    className="text-2xl text-[#8750f7]"
-                    title="Live Link"
-                    href={project.liveLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaExternalLinkAlt />
-                  </a>
-                  <a
-                    className="text-2xl text-[#8750f7]"
-                    title="GitHub Link"
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FaGithub />
-                  </a>
-                </div>
-                <Link to={`/portfolio/${project.id}`}>
-                  <button className="text-sm bg-transparent border p-2 rounded-md text-white hover:bg-transparent hover:text-[#757575]">
-                    View Details
-                  </button>
-                </Link>
-              </div>
-            </div>
-          ))}
+       {/* Projects Grid */}
+<div className="projects">
+  {/* Check if there are no filtered projects */}
+  {filteredProjects.length === 0 ? (
+    <div className="flex justify-center">
+      <h1>No projects found, please try another tab.</h1>
+    </div>
+  ) : (
+    filteredProjects.slice(0, visibleCount).map((project) => (
+      <div
+        key={project.id}
+        className={`project-card ${
+          zoomEffect ? "zoom-in" : ""
+        } rounded-lg overflow-hidden shadow-lg p-4`}
+      >
+        {/* Project Thumbnail */}
+        <div>
+          <img
+            className="rounded-lg object-fill w-full h-48"
+            src={project.thumbnail}
+            alt={project.title}
+          />
         </div>
+
+        {/* Project Title and Description */}
+        <h3 className="text-[#ddd] mt-4">{project.title}</h3>
+        <p className="text-[#ddd] mt-2">
+          {getShortText(project.description, 25)}
+        </p>
+
+        {/* Project Technologies */}
+        <div className="flex flex-wrap items-center gap-2 mt-4">
+          <h1 className="text-[#ddd] w-full">Technologies:</h1>
+          {Array.isArray(project.technologies) &&
+            project.technologies.map((tech, index) => (
+              <img
+                key={index}
+                className="h-8 cursor-pointer"
+                src={tech.url}
+                title={tech.title}
+                alt={tech.title}
+              />
+            ))}
+        </div>
+
+        {/* Project Links */}
+        <div className="flex justify-between items-center pt-6">
+          <div className="flex gap-6">
+            <a
+              className="text-2xl text-[#8750f7]"
+              title="Live Link"
+              href={project.liveLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaExternalLinkAlt />
+            </a>
+            <a
+              className="text-2xl text-[#8750f7]"
+              title="GitHub Link"
+              href={project.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub />
+            </a>
+          </div>
+          <Link to={`/portfolio/${project.id}`}>
+            <button className="text-sm bg-transparent border p-2 rounded-md text-white hover:bg-transparent hover:text-[#757575]">
+              View Details
+            </button>
+          </Link>
+        </div>
+      </div>
+    ))
+  )}
+</div>
+
 
         {/* Load More Button */}
         {visibleCount < filteredProjects.length && (
