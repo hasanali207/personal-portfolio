@@ -1,32 +1,44 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../assets/logome.svg";
 import { Link } from "react-router-dom";
+import Preloader from "../components/Preloader ";
 
 const Header = () => {
+  // State for preloading and active section
+  const [isLoading, setIsLoading] = useState(false);
+  const [activeId, setActiveId] = useState("");
+
   // List of menu items with corresponding section IDs
   const menuItems = [
     { name: "Portfolio", id: "portfolio" },
     { name: "Experience", id: "experience" },
     { name: "Skills", id: "skills" },
     { name: "About", id: "about" },
-    // { name: "Blog", id: "blog" },
     { name: "Contact", id: "contact" },
   ];
 
-  // State to manage active section
-  const [activeId, setActiveId] = useState("");
-
-  // Function to handle click and scroll to the section
-  const handleScrollToSection = (id) => {
+  // Function to handle click and scroll to the section with preloading
+  const handleScrollToSection = async (id) => {
+    setIsLoading(true); // Start preloading
     setActiveId(id); // Set active id
+
+    // Wait for a brief moment (e.g., 500ms) to show the preloader
+    await new Promise((resolve) => setTimeout(resolve, 500));
+
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
+
+    // Stop preloading after scrolling
+    setTimeout(() => setIsLoading(false), 500); // Hide preloader after 500ms
   };
 
   return (
     <section className="w-full bg-[#0a192f] px-12 pb-4 pt-2" id="header">
+      {/* Show Preloader when isLoading is true */}
+      {isLoading && <Preloader />}
+
       <div className="flex justify-between items-center" id="navbar">
         {/* Mobile Menu */}
         <div className="dropdown z-50 lg:hidden">

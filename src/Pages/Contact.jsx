@@ -43,7 +43,7 @@ const Contact = () => {
             </p>
       </div>   
       
-        <div className="flex flex-col lg:flex-row justify-between gap-10 mt-4">
+        <div className="flex flex-col lg:flex-row justify-between space-x-0 lg:space-x-20 mt-4">
           
          
           <form  data-aos="fade-up"     data-aos-delay="600"  ref={form} onSubmit={sendEmail}  className="py-4 lg:py-6 w-full lg:w-1/2">
@@ -105,7 +105,7 @@ const Contact = () => {
   </div>
 </form>
 <div data-aos="fade-up"     data-aos-delay="400"
- className="w-full lg:w-1/2 mt-6">
+ className="w-full lg:w-1/2 mt-8 lg:mt-0">
             
             <div className="space-y-8">
             <div className="flex items-center text-[#ddd] space-x-4">
