@@ -50,13 +50,13 @@ const About = () => {
   }, []);
 
   return (
-    <section className="bg-[#0a192f] section sec2 about px-6 lg:px-0" id="about">
+    <section className="bg-[#0a192f] section sec2 about mt:0 lg:mt-6 p-8  px-6 lg:px-20" id="about">
       <div className="flex justify-center items-center ">
         <div className=" text-4xl lg:text-5xl leading-tight font-bold gradient-text py-4 ">
           About Me
         </div>
       </div>
-      <div className="about-container grid grid-cols-1 lg:grid-cols-2 gap-8 py-14">
+      <div className="about-container grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div data-aos="zoom-in-down"     data-aos-delay="300" className="left-about pr-0 lg:pr-20">
           <p className="py-4 leading-8 text-[#ddd]">
             My name is Hasan Ali. I am a professional and enthusiastic programmer in my daily life.

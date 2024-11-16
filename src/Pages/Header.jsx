@@ -26,7 +26,7 @@ const Header = () => {
   };
 
   return (
-    <section className="w-full bg-[#0a192f] px-12 py-4">
+    <section className="w-full bg-[#0a192f] px-12 py-4" id="header">
       <div className="flex justify-between items-center" id="navbar">
         {/* Mobile Menu */}
         <div className="dropdown z-50 lg:hidden">
@@ -66,7 +66,7 @@ const Header = () => {
 
         {/* Logo and Contact */}
         <div className="flex items-center">
-          <Link to="/">
+          <Link to="/" onClick={() => handleScrollToSection("header")}>
             <img src={logo} alt="Logo" />
           </Link>
           <a
@@ -78,8 +78,8 @@ const Header = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="navbar-end hidden lg:flex w-[80%]">
-          <ul className="menu menu-horizontal px-1 text-white">
+        <div className="navbar-end hidden lg:flex w-full lg:w-[70%]">
+          <ul className="menu menu-horizontal px-1 text-white space-x-6">
             {menuItems.map((item) => (
               <li
                 key={item.id}

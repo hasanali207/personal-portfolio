@@ -3,11 +3,11 @@ import { FaBriefcase, FaGraduationCap } from 'react-icons/fa6'
 
 const Timeline = () => {
   return (
-    <section className='max-w-6xl mx-auto pt-0 lg:pt-6 px-4 lg:px-0' id='experience'>
-        <div className='py-20'>
+    <section className='max-w-6xl mx-auto pt-20 px-4 lg:px-0' id='experience'>
+        <div className=''>
       <div className="timeline flex flex-col lg:flex-row justify-between  gap-8">
 
-        <div className=' w-full lg:w-1/2 '>
+        <div className=' w-full lg:w-1/2'>
         <div className="flex mb-8 items-center justify-center lg:justify-start">
         <span className='text-4xl mr-2 text-[#8750f7] gradient-text leading-tight'>< FaGraduationCap /></span>
          <h1 className='text-3xl lg:text-5xl leading-tight font-bold gradient-text '>  My Education</h1>
