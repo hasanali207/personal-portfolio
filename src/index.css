@@ -71,12 +71,12 @@ body {
 }
 .icon-box img {
   filter: grayscale(90%);
-  transition: 0.3s;
+  transition: scale 750ms ease-out, 
+  filter 250ms ease-in-out;
 }
 .skill-item:hover .icon-box img {
   filter: grayscale(0);
-
-  transform: scale(1.1);
+  scale: 1.15;
 }
 
 /* hero seciton  */
