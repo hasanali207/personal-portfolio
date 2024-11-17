@@ -18,7 +18,7 @@ const RecentWorks = () => {
   }, []);
 
   // Define project categories
-  const categories = ["All", "React", "Nextjs", "WP", "Node", "Web", "Full"];
+  const categories = ["All", "React", "Nextjs", "WP"];
 
   // Filter projects based on active category
   const filteredProjects = projects.filter(
