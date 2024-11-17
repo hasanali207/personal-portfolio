@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaAngleDoubleDown, FaExternalLinkAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
@@ -124,7 +124,7 @@ const RecentWorks = () => {
         <div className="flex justify-between items-center pt-6">
           <div className="flex gap-6">
             <a
-              className="text-2xl text-[#8750f7]"
+              className="text-2xl text-[#8750f7] cursor-pointer"
               title="Live Link"
               href={project.liveLink}
               target="_blank"
@@ -133,7 +133,7 @@ const RecentWorks = () => {
               <FaExternalLinkAlt />
             </a>
             <a
-              className="text-2xl text-[#8750f7]"
+              className="text-2xl text-[#8750f7] cursor-pointer"
               title="GitHub Link"
               href={project.githubLink}
               target="_blank"
@@ -156,12 +156,12 @@ const RecentWorks = () => {
 
         {/* Load More Button */}
         {visibleCount < filteredProjects.length && (
-          <div className="flex justify-center mt-6">
+          <div className="flex justify-start mt-6 pl-40">
             <button
               onClick={handleLoadMore}
-              className="btn py-2 px-4 text-xs bg-transparent border-none hover:bg-transparent font-bold uppercase hover:text-slate-500 text-slate-200"
+              className="btn py-2 px-4 text-xs bg-transparent border-none hover:bg-transparent font-bold uppercase hover:text-slate-500 text-[#ddd]"
             >
-              See More
+              See More <FaAngleDoubleDown />
             </button>
           </div>
         )}
