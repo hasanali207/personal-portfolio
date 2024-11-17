@@ -10,10 +10,10 @@ const Header = () => {
 
   // List of menu items with corresponding section IDs
   const menuItems = [
-    { name: "Portfolio", id: "portfolio" },
+    { name: "About", id: "about" },
     { name: "Experience", id: "experience" },
     { name: "Skills", id: "skills" },
-    { name: "About", id: "about" },
+    { name: "Portfolio", id: "portfolio" },
     { name: "Contact", id: "contact" },
   ];
 
