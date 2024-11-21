@@ -24,8 +24,8 @@ const Preloader = () => {
           setIsSlideUp(true); // Trigger the slide-up effect
           setTimeout(() => {
             preloader.style.display = 'none'; // Remove the preloader from DOM
-          }, 1000); // Delay to allow slide-up animation
-        }, 1000); // Wait 1 second before sliding up
+          }, 2000); // Delay to allow slide-up animation
+        }, 2000); // Wait 1 second before sliding up
       }
     };
 
