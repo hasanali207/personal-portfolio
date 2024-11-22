@@ -58,7 +58,7 @@ const About = () => {
       </div>
       <div className="about-container grid grid-cols-1 lg:grid-cols-2 mt-0 lg:mt-4 gap-8">
         <div data-aos="zoom-in-down"     data-aos-delay="600" className="left-about pr-0 lg:pr-20">
-          <p className="py-4 leading-8 text-[#ddd]">
+          <p className="py-4 leading-8 text-[#ddd] text-justify">
             My name is Hasan Ali. I am a professional and enthusiastic programmer in my daily life.
             I am a quick learner with a self-learning attitude. I love to learn and explore new
             technologies and am passionate about problem-solving.
@@ -83,7 +83,7 @@ const About = () => {
 
 
         <div data-aos="zoom-in-up"     data-aos-delay="800" className="right-about grid grid-cols-1 sm:grid-cols-2 gap-8 pt-10 sm:pt-0">
-          <div className="p-6">
+          <div className="py-6">
             <div className="abt-text flex flex-col">
               <p ref={projectsRef} className="large-text text-3xl font-bold text-[#8750f7]">
                 {isVisible.projects && <CountUp end={50} duration={3} />}
@@ -93,7 +93,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="p-6">
+          <div className="py-6">
             <div className="abt-text flex flex-col">
               <p ref={experienceRef} className="large-text text-3xl font-bold text-[#8750f7]">
                 {isVisible.experience && <CountUp end={4} duration={4} />} +
@@ -103,7 +103,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="p-6">
+          <div className="py-6">
             <div className="abt-text flex flex-col">
               <p ref={clientsRef} className="large-text text-3xl font-bold text-[#8750f7]">
                 {isVisible.clients && <CountUp end={80} duration={3} />}
@@ -113,7 +113,7 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div className="p-6">
+          <div className="py-6">
             <div className="abt-text flex flex-col">
               <p ref={reviewsRef} className="large-text text-3xl font-bold text-[#8750f7]">
                 {isVisible.reviews && <CountUp end={10} duration={5} />}
