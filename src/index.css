@@ -314,6 +314,66 @@ footer .footer-nav {
   transform: translateY(0); /* Initial position */
 }
 
+
+.animation-container {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 10%; /* Start above the first row */
+  left: 5%; /* Adjust starting position */
+  animation: arrowMovement 10s linear infinite;
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  background-color: #8750f7;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.animation-container {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 10%; /* Starting at the top row */
+  left: 0%; /* Start at the far left */
+  animation: arrowMovement 10s linear infinite;
+}
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  background-color: #8750f7;
+  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+@keyframes arrowMovement {
+  100% {
+    top: 10%; /* Top row */
+    left: 0%; /* Start at the left */
+  }
+  75% {
+    top: 10%; 
+    left: 100%; /* Move to the far right */
+  }
+  50% {
+    top: 70%; /* Move down to the second row */
+    left: 100%; /* Start at the far right */
+  }
+  25% {
+    top: 70%; 
+    left: 0%; /* Move back to the far left */
+  }
+  0% {
+    top: 10%; /* Loop back to the top row */
+    left: 0%; /* Reset to the starting position */
+  }
+}
+
+
+
+
+
 /* .custom-cursor {
   position: fixed;
   width: 200px;
