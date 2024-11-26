@@ -374,7 +374,7 @@ footer .footer-nav {
 
 
 
-/* .custom-cursor {
+.custom-cursor {
   position: fixed;
   width: 200px;
   height: 200px;
@@ -385,7 +385,7 @@ footer .footer-nav {
   transform: translate(-50%, -50%);
   transition: transform 0.1s ease-out, opacity 0.2s ease-out;
   z-index: 1000;
-} */
+}
 
 
 
