@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';// Import the Preloader
+import React, { useEffect, useState } from 'react'; // Import the Preloader
 import { Outlet } from 'react-router-dom';
+import Footer from '../components/Footer';
 import Preloader from '../components/Preloader ';
 import Header from '../Pages/Header';
-import Footer from '../components/Footer';
 const Main = () => {
   const [isLoading, setIsLoading] = useState(true);
 

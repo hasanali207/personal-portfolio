@@ -1,14 +1,11 @@
-import img1 from '../assets/html.png';
 import img2 from '../assets/css.png';
-import img3 from '../assets/tailwind.png';
-import img4 from '../assets/bootstrap.png';
-import img5 from '../assets/react.png';
-import img6 from '../assets/node.png';
+import img1 from '../assets/html.png';
 import img7 from '../assets/mongodb.png';
-import img8 from '../assets/typescript.png';
 import img9 from '../assets/nextjs.png';
-import img10 from '../assets/figma.png';
-import img11 from '../assets/react.png';
+import img6 from '../assets/node.png';
+import img5 from '../assets/react.png';
+import img3 from '../assets/tailwind.png';
+import img8 from '../assets/typescript.png';
 
 
 export default function Skills() {

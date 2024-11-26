@@ -93,12 +93,15 @@ body {
   object-fit: cover;
   border-radius: 38px;
   transition: 0.4s;
+  background-color: #0a192f;
 }
 .hero-image:hover {
   border: 2px solid #8750f7;
   transform: scale(1.05);
   transform: rotate(-4deg) translate;
 }
+
+
 /* contact  */
 /* 
 input{
@@ -207,9 +210,9 @@ border-color: #8750f7;
     padding: 10px 20px;
     margin: 0 2px;
   }
-  .hero-image{
+  /* .hero-image{
     height: 60vh;
-  }
+  } */
 }
 .project-card {
   background: rgba(10, 25, 47, 0.5);
@@ -332,7 +335,7 @@ footer .footer-nav {
   height: 20px;
   top: 10%; /* Starting at the top row */
   left: 0%; /* Start at the far left */
-  animation: arrowMovement 10s linear infinite;
+  animation: arrowMovement 10s linear;
 }
 
 .arrow {

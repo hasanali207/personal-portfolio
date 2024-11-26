@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import logo from "../assets/logome.svg";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logome.svg";
 import Preloader from "../components/Preloader ";
 
 const Header = () => {

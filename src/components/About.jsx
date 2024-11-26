@@ -1,5 +1,5 @@
+import { useEffect, useRef, useState } from "react";
 import CountUp from "react-countup";
-import { useRef, useState, useEffect } from "react";
 import { FaArrowDown } from "react-icons/fa";
 
 const About = () => {
