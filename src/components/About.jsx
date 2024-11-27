@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState } from "react";
-import CountUp from "react-countup";
-import { FaArrowDown } from "react-icons/fa";
+import { useEffect, useRef, useState } from 'react';
+import CountUp from 'react-countup';
+import { FaArrowDown } from 'react-icons/fa';
 
 const About = () => {
   const [isVisible, setIsVisible] = useState({
@@ -24,7 +24,7 @@ const About = () => {
             observer.unobserve(entry.target);
           }
         },
-        { threshold: 0.5 }
+        { threshold: 0.5 },
       );
 
       if (ref.current) {
@@ -33,10 +33,10 @@ const About = () => {
     };
 
     // Creating observers for each counter
-    createObserver(projectsRef, "projects");
-    createObserver(experienceRef, "experience");
-    createObserver(clientsRef, "clients");
-    createObserver(reviewsRef, "reviews");
+    createObserver(projectsRef, 'projects');
+    createObserver(experienceRef, 'experience');
+    createObserver(clientsRef, 'clients');
+    createObserver(reviewsRef, 'reviews');
 
     return () => {
       // Clean up observers if needed
@@ -50,22 +50,31 @@ const About = () => {
   }, []);
 
   return (
-    <section className="bg-[#0a192f] section sec2 about mt:0 lg:mt-6 p-8  px-6 lg:px-20" id="about">
+    <section
+      className="bg-[#0a192f] section sec2 about mt:0 lg:mt-6 p-8  px-6 lg:px-20"
+      id="about"
+    >
       <div className="flex justify-center items-center ">
         <div className=" text-4xl lg:text-5xl leading-tight font-bold gradient-text py-4 ">
           About Me
         </div>
       </div>
       <div className="about-container grid grid-cols-1 lg:grid-cols-2 mt-0 lg:mt-4 gap-8">
-        <div data-aos="zoom-in-down"     data-aos-delay="600" className="left-about pr-0 lg:pr-20">
+        <div
+          data-aos="zoom-in-down"
+          data-aos-delay="600"
+          className="left-about pr-0 lg:pr-20"
+        >
           <p className="py-4 leading-8 text-[#ddd] text-justify">
-            My name is Hasan Ali. I am a professional and enthusiastic programmer in my daily life.
-            I am a quick learner with a self-learning attitude. I love to learn and explore new
-            technologies and am passionate about problem-solving.
-            <br /> <br /> I love almost all the stacks of web application development and love to make
-            the web more open to the world. My core skill is based on JavaScript, and I love to do most
-            of the things using JavaScript. I am available for any kind of job opportunity that suits my
-            skills and interests.
+            My name is Hasan Ali. I am a professional and enthusiastic
+            programmer in my daily life. I am a quick learner with a
+            self-learning attitude. I love to learn and explore new technologies
+            and am passionate about problem-solving.
+            <br /> <br /> I love almost all the stacks of web application
+            development and love to make the web more open to the world. My core
+            skill is based on JavaScript, and I love to do most of the things
+            using JavaScript. I am available for any kind of job opportunity
+            that suits my skills and interests.
           </p>
           <div className="btn-con">
             <a
@@ -81,11 +90,17 @@ const About = () => {
           </div>
         </div>
 
-
-        <div data-aos="zoom-in-up"     data-aos-delay="800" className="right-about grid grid-cols-1 sm:grid-cols-2 gap-8 pt-10 sm:pt-0">
+        <div
+          data-aos="zoom-in-up"
+          data-aos-delay="800"
+          className="right-about grid grid-cols-1 sm:grid-cols-2 gap-8 pt-10 sm:pt-0"
+        >
           <div className="py-6">
             <div className="abt-text flex flex-col">
-              <p ref={projectsRef} className="large-text text-3xl font-bold text-[#8750f7]">
+              <p
+                ref={projectsRef}
+                className="large-text text-3xl font-bold text-[#8750f7]"
+              >
                 {isVisible.projects && <CountUp end={50} duration={3} />}
               </p>
               <p className="uppercase font-semibold text-[#ddd] text-lg relative">
@@ -95,7 +110,10 @@ const About = () => {
           </div>
           <div className="py-6">
             <div className="abt-text flex flex-col">
-              <p ref={experienceRef} className="large-text text-3xl font-bold text-[#8750f7]">
+              <p
+                ref={experienceRef}
+                className="large-text text-3xl font-bold text-[#8750f7]"
+              >
                 {isVisible.experience && <CountUp end={4} duration={4} />} +
               </p>
               <p className="uppercase font-semibold text-[#ddd] text-lg relative">
@@ -105,7 +123,10 @@ const About = () => {
           </div>
           <div className="py-6">
             <div className="abt-text flex flex-col">
-              <p ref={clientsRef} className="large-text text-3xl font-bold text-[#8750f7]">
+              <p
+                ref={clientsRef}
+                className="large-text text-3xl font-bold text-[#8750f7]"
+              >
                 {isVisible.clients && <CountUp end={80} duration={3} />}
               </p>
               <p className="uppercase font-semibold text-[#ddd] text-lg relative">
@@ -115,7 +136,10 @@ const About = () => {
           </div>
           <div className="py-6">
             <div className="abt-text flex flex-col">
-              <p ref={reviewsRef} className="large-text text-3xl font-bold text-[#8750f7]">
+              <p
+                ref={reviewsRef}
+                className="large-text text-3xl font-bold text-[#8750f7]"
+              >
                 {isVisible.reviews && <CountUp end={10} duration={5} />}
               </p>
               <p className="uppercase font-semibold text-[#ddd] text-lg relative">

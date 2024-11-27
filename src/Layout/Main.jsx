@@ -20,9 +20,9 @@ const Main = () => {
       {isLoading && <Preloader />} {/* Show Preloader if loading */}
       {!isLoading && (
         <div>
-            <Header></Header>
-            <Outlet></Outlet>
-            <Footer></Footer>
+          <Header></Header>
+          <Outlet></Outlet>
+          <Footer></Footer>
         </div>
       )}
     </>

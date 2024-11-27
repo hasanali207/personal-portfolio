@@ -1,20 +1,20 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import logo from "../assets/logome.svg";
-import Preloader from "../components/Preloader ";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../assets/logome.svg';
+import Preloader from '../components/Preloader ';
 
 const Header = () => {
   // State for preloading and active section
   const [isLoading, setIsLoading] = useState(false);
-  const [activeId, setActiveId] = useState("");
+  const [activeId, setActiveId] = useState('');
 
   // List of menu items with corresponding section IDs
   const menuItems = [
-    { name: "About", id: "about" },
-    { name: "Experience", id: "experience" },
-    { name: "Skills", id: "skills" },
-    { name: "Portfolio", id: "portfolio" },
-    { name: "Contact", id: "contact" },
+    { name: 'About', id: 'about' },
+    { name: 'Experience', id: 'experience' },
+    { name: 'Skills', id: 'skills' },
+    { name: 'Portfolio', id: 'portfolio' },
+    { name: 'Contact', id: 'contact' },
   ];
 
   // Function to handle click and scroll to the section with preloading
@@ -27,7 +27,7 @@ const Header = () => {
 
     const section = document.getElementById(id);
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      section.scrollIntoView({ behavior: 'smooth' });
     }
 
     // Stop preloading after scrolling
@@ -42,7 +42,11 @@ const Header = () => {
       <div className="flex justify-between items-center" id="navbar">
         {/* Mobile Menu */}
         <div className="dropdown z-50 lg:hidden">
-          <div tabIndex={0} role="button" className="btn text-white btn-ghost lg:hidden">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn text-white btn-ghost lg:hidden"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -66,7 +70,7 @@ const Header = () => {
               <li
                 key={item.id}
                 className={`mr-2 text-lg text-gray-700 hover:text-[#757575] cursor-pointer ${
-                  activeId === item.id ? "text-[#757575]" : ""
+                  activeId === item.id ? 'text-[#757575]' : ''
                 }`}
                 onClick={() => handleScrollToSection(item.id)}
               >
@@ -78,7 +82,7 @@ const Header = () => {
 
         {/* Logo and Contact */}
         <div className="flex items-center">
-          <Link to="/" onClick={() => handleScrollToSection("header")}>
+          <Link to="/" onClick={() => handleScrollToSection('header')}>
             <img src={logo} alt="Logo" />
           </Link>
           <a
@@ -96,7 +100,9 @@ const Header = () => {
               <li
                 key={item.id}
                 className={`mr-2 text-lg cursor-pointer ${
-                  activeId === item.id ? "text-[#757575]" : "hover:text-[#757575]"
+                  activeId === item.id
+                    ? 'text-[#757575]'
+                    : 'hover:text-[#757575]'
                 }`}
                 onClick={() => handleScrollToSection(item.id)}
               >
@@ -107,7 +113,7 @@ const Header = () => {
 
           {/* Hire Me Button */}
           <button className="text-2xl font-bold w-36 bg-gradient-to-r from-primary via-[#8750f7] to-[#ff00d3] bg-300% text-transparent bg-clip-text animate-gradient">
-            <Link to="#" onClick={() => handleScrollToSection("contact")}>
+            <Link to="#" onClick={() => handleScrollToSection('contact')}>
               Hire Me
             </Link>
           </button>
