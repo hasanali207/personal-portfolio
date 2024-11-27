@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap');
 
 html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Sora", sans-serif;
+  font-family: 'Sora', sans-serif;
   font-optical-sizing: auto;
   background: #0a192f;
 }
@@ -66,8 +66,7 @@ body {
 }
 .icon-box img {
   filter: grayscale(90%);
-  transition: scale 750ms ease-out, 
-  filter 250ms ease-in-out;
+  transition: scale 750ms ease-out, filter 250ms ease-in-out;
 }
 .skill-item:hover .icon-box img {
   filter: grayscale(0);
@@ -101,7 +100,6 @@ body {
   transform: rotate(-4deg) translate;
 }
 
-
 /* contact  */
 /* 
 input{
@@ -122,9 +120,7 @@ border-color: #8750f7;
   z-index: 10;
   margin-bottom: 40px;
   cursor: pointer;
-  transition: 
-    background-image 2s ease-in-out,
-    color 0.4s ease-in-out,
+  transition: background-image 2s ease-in-out, color 0.4s ease-in-out,
     filter 0.4s ease-in-out;
 }
 
@@ -139,10 +135,9 @@ border-color: #8750f7;
 
 .timeline-item:hover {
   background-image: linear-gradient(260deg, #2a1454 0%, #7d52d2 100%);
-  color: white; 
-  filter: brightness(1.1);  
+  color: white;
+  filter: brightness(1.1);
 }
-
 
 /* Portfolio   */
 /* src/components/RecentWorks.css */
@@ -181,10 +176,8 @@ border-color: #8750f7;
 .category-buttons .active {
   background-color: #8750f7;
   color: #fff;
-  
-
 }
-.category-buttons .active:hover{
+.category-buttons .active:hover {
   background-color: #8750f7;
   color: #fff;
 }
@@ -216,13 +209,11 @@ border-color: #8750f7;
 }
 .project-card {
   background: rgba(10, 25, 47, 0.5);
-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
 
+  border: 1px solid rgba(135, 80, 247, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 
-border: 1px solid rgba(135, 80, 247, 0.3);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-
-  
   text-align: left;
   padding: 8px;
   /* border: 1px solid #636161   ; */
@@ -266,7 +257,6 @@ footer {
   background-color: #0a192f; /* Light gray background for footer */
   padding: 20px;
   text-align: center;
-  
 }
 
 footer .top {
@@ -306,67 +296,11 @@ footer .footer-nav {
   gap: 15px; /* Spacing between links */
 }
 
-
 .preloader {
   transition: transform 1s ease-in-out, opacity 0.5s ease-in-out;
   transform: translateY(0); /* Initial position */
 }
 
-
-.animation-container {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 10%; /* Start above the first row */
-  left: 5%; /* Adjust starting position */
-  animation: arrowMovement 10s linear infinite;
-}
-
-.arrow {
-  width: 20px;
-  height: 20px;
-  background-color: #8750f7;
-  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-}
-
-.animation-container {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 10%; /* Starting at the top row */
-  left: 0%; /* Start at the far left */
-  animation: arrowMovement 10s linear infinite;
-}
-
-.arrow {
-  width: 20px;
-  height: 20px;
-  background-color: #8750f7;
-  clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-}
-
-@keyframes arrowMovement {
-  100% {
-    top: 10%; /* Top row */
-    left: 0%; /* Start at the left */
-  }
-  75% {
-    top: 10%; 
-    left: 100%; /* Move to the far right */
-  }
-  50% {
-    top: 70%; /* Move down to the second row */
-    left: 100%; /* Start at the far right */
-  }
-  25% {
-    top: 70%; 
-    left: 0%; /* Move back to the far left */
-  }
-  0% {
-    top: 10%; /* Loop back to the top row */
-    left: 0%; /* Reset to the starting position */
-  }
-}
 
 
 
@@ -383,23 +317,6 @@ footer .footer-nav {
   transition: transform 0.1s ease-out, opacity 0.2s ease-out;
   z-index: 1000;
 } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @tailwind base;
 @tailwind components;
