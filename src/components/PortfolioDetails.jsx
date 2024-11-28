@@ -40,9 +40,9 @@ export default function PortfolioDetails() {
           
           <div className="px-6 py-8 flex flex-col space-y-5">
             <h1 className='text-white mt-8 border-b text-2xl py-2'>Links:</h1>
-            <div><Link className='text-blue-500 mb-2' to={project.liveLink}>Live Site Link</Link></div>
-            <div><Link className='text-blue-500 mb-2 'to={project.githubLink}>Client Site Github Repo </Link></div>
-            <div><Link className='text-blue-500 mb-2 'to={project.serverLink}>Server Site Github Repo</Link></div>
+            <div><Link className='mb-2 btn bg-[#0089f7] text-[#fff] border-0 font-semibold' to={project.liveLink}>Live Site Link</Link></div>
+            <div><Link className=' mb-2 btn bg-[#0089f7] text-[#fff] border-0 font-semibold'to={project.githubLink}>Client Site Github Repo </Link></div>
+            <div><Link className=' mb-2 btn bg-[#0089f7] text-[#fff] border-0 font-semibold'to={project.serverLink}>Server Site Github Repo</Link></div>
             
           </div>
 
