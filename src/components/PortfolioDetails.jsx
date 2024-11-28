@@ -21,7 +21,7 @@ import RecentWorks from './RecentWorks';
   return (
     <div>
       {loading && <Preloader></Preloader>}
-      <div className="max-w-6xl mx-auto px-6 lg:px-0">
+      <div className="max-w-6xl mx-auto px-5 lg:px-0">
         <div className="flex flex-col lg:flex-row justify-between pt-5">
           <div className="w-full lg:w-[60%]">
             <h1 className="text-2xl lg:text-3xl text-white">{project.title}</h1>
@@ -45,7 +45,7 @@ import RecentWorks from './RecentWorks';
 
           {/* right section  */}
           <div className="w-full lg:w-[40%]">
-            <div className="px-6 py-8 flex flex-col space-y-5">
+            <div className="py-8 flex flex-col space-y-5">
               <h1 className="text-white mt-8 border-b text-2xl py-2">Links:</h1>
               <div>
                 <Link
@@ -73,13 +73,13 @@ import RecentWorks from './RecentWorks';
               </div>
             </div>
 
-            <div className="px-6 mt-4 mb-4">
+            <div className="mt-4 mb-4">
               <h1 className="text-white w-full mb-6 text-2xl border-b py-2">
                 Feautured:
               </h1>
               <p className="text-[#ddd]">{project.description}</p>
             </div>
-            <div className="px-6 py-4">
+            <div className="py-4">
               <h1 className="text-[#ddd] w-full mb-6 text-2xl border-b py-2">
                 Technologies:
               </h1>
