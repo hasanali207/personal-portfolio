@@ -3,6 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import Footer from '../components/Footer';
 import Preloader from '../components/Preloader ';
 import Header from '../Pages/Header';
+import Navbar from '../components/Navbar';
 const Main = () => {
   const [isLoading, setIsLoading] = useState(true);
   const location = useLocation();
@@ -31,6 +32,7 @@ const Main = () => {
       {/* For the details page, just render the content with no Header/Footer */}
       {!isLoading && isDetailsPage && (
         <div>
+          <Navbar></Navbar>
           <Outlet /> {/* Render the matching child route */}
           <Footer />
         </div>

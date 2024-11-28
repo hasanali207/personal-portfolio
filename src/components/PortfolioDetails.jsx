@@ -1,9 +1,9 @@
-import { Link, useLoaderData, useParams } from 'react-router-dom';
-import RecentWorks from './RecentWorks';
 import { useState } from 'react';
+import { Link, useLoaderData, useParams } from 'react-router-dom';
 import Preloader from './Preloader ';
+import RecentWorks from './RecentWorks';
 
-export default function PortfolioDetails() {
+ export default function PortfolioDetails() {
   const projects = useLoaderData();
   const { id } = useParams();
   const idInt = parseInt(id);
