@@ -31,8 +31,8 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Menu */}
-        <div className="navbar-end w-full lg:w-[70%]">
-          <ul className="menu menu-horizontal px-1 text-white space-x-6">
+        <div className="navbar-end flex justify-between items-center w-full lg:w-[70%]">
+          <ul className="px-1 text-white">
             <li
               className="mr-2 text-lg cursor-pointer hover:text-[#757575]"
               onClick={handlePreloader}
