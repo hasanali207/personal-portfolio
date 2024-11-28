@@ -61,8 +61,8 @@ const About = () => {
       </div>
       <div className="about-container grid grid-cols-1 lg:grid-cols-2 mt-0 lg:mt-4 gap-8">
         <div
-          data-aos="zoom-in-down"
-          data-aos-delay="600"
+          data-aos="fade-up-right"
+          data-aos-delay="900"
           className="left-about pr-0 lg:pr-20"
         >
           <p className="py-4 leading-8 text-[#ddd] text-justify">
@@ -91,8 +91,8 @@ const About = () => {
         </div>
 
         <div
-          data-aos="zoom-in-up"
-          data-aos-delay="800"
+          data-aos="fade-up-left"
+          data-aos-delay="1000"
           className="right-about grid grid-cols-1 sm:grid-cols-2 gap-8 pt-10 sm:pt-0"
         >
           <div className="py-6">

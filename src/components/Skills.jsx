@@ -6,6 +6,7 @@ import img6 from '../assets/node.png';
 import img5 from '../assets/react.png';
 import img3 from '../assets/tailwind.png';
 import img8 from '../assets/typescript.png';
+import img10 from '../assets/mongoose.png';
 
 export default function Skills() {
   return (
@@ -96,51 +97,16 @@ export default function Skills() {
         </div>
 
         <div className="flex  items-center  justify-center flex-wrap gap-0 lg:gap-4 mt-6">
-          {/* item1 */}
-
-          {/* item2 */}
-          <div
-            data-aos="fade-left"
-            data-aos-delay="600"
-            className="flex flex-col justify-center items-center skill-item"
-          >
-            <div className="icon-box">
-              <img className="w-20 h-20" src={img2} alt="CSS3" />
-            </div>
-            <p className="text-lg mt-4 text-[#8750f7]">CSS3</p>
-          </div>
-          {/* item3 */}
-          <div
-            data-aos="fade-left"
-            data-aos-delay="500"
-            className="flex flex-col justify-center items-center skill-item"
-          >
-            <div className="icon-box">
-              <img className="w-20 h-20" src={img3} alt="Tailwind" />
-            </div>
-            <p className="text-lg mt-4 text-[#8750f7]">TAILWIND</p>
-          </div>
-          {/* item  */}
-          <div
-            data-aos="fade-left"
-            data-aos-delay="400"
-            className="flex flex-col justify-center items-center skill-item"
-          >
-            <div className="icon-box">
-              <img className="w-20 h-20" src={img5} alt="HTML" />
-            </div>
-            <p className="text-lg mt-4  text-[#8750f7] ">React</p>
-          </div>
-          {/* item */}
+         
           <div
             data-aos="fade-left"
             data-aos-delay="300"
             className="flex flex-col justify-center items-center skill-item"
           >
             <div className="icon-box">
-              <img className="w-20 h-20" src={img6} alt="HTML" />
+              <img className="w-20 h-20" src={img10} alt="HTML" />
             </div>
-            <p className="text-lg mt-4 text-[#8750f7]">Node</p>
+            <p className="text-lg mt-4 text-[#8750f7]">Mongoose</p>
           </div>
 
           <div
