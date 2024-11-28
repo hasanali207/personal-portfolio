@@ -2,7 +2,6 @@ import { createBrowserRouter } from 'react-router-dom';
 import Main from '../Layout/Main';
 import Home from '../Pages/Home';
 import About from '../components/About';
-import Portfolio from '../components/Portfolio';
 import Timeline from '../components/Timeline';
 import PortfolioDetails from '../components/PortfolioDetails';
 import Contact from '../Pages/Contact';
