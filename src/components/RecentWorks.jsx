@@ -3,7 +3,7 @@ import { FaAngleDoubleDown, FaExternalLinkAlt } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 
-const RecentWorks = () => {
+const RecentWorks = ({handleLoadingClik}) => {
   const [activeCategory, setActiveCategory] = useState('All');
   const [projects, setProjects] = useState([]);
   const [visibleCount, setVisibleCount] = useState(2);
@@ -146,7 +146,7 @@ const RecentWorks = () => {
                     </a>
                   </div>
                   <Link to={`/portfolio/${project.id}`}>
-                    <button className="text-sm bg-transparent border p-2 rounded-md text-white hover:bg-transparent hover:text-[#757575]">
+                    <button onClick={handleLoadingClik} className="text-sm bg-transparent border p-2 rounded-md text-white hover:bg-transparent hover:text-[#757575]">
                       View Details
                     </button>
                   </Link>

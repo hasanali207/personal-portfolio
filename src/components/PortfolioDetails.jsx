@@ -1,29 +1,43 @@
 import { Link, useLoaderData, useParams } from 'react-router-dom';
 import RecentWorks from './RecentWorks';
 import { useState } from 'react';
+import Preloader from './Preloader ';
 
 export default function PortfolioDetails() {
   const projects = useLoaderData();
   const { id } = useParams();
   const idInt = parseInt(id);
   const project = projects.find((item) => item.id === idInt);
-  
+  const [loading, setLoading] = useState(false);
+
+  const handleLoadingClik = () => {
+    setLoading(true);
+    window.scrollTo(0, 0); // Scroll to the top of the page
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  };
+
+
   return (
+
+    
     <div>
+      {loading && <Preloader></Preloader>}
       <div className='max-w-6xl mx-auto'>
-      <div className="flex justify-between pt-5">
+      <div className="flex flex-col lg:flex-row justify-between pt-5">
         <div className="w-full lg:w-[60%]">
           <h1 className="text-2xl lg:text-3xl text-white">{project.title}</h1>
           
          
-{/* 
+
           <div className="mt-4">
             <img
               className="w-full"
               src={project.thumbnail}
               alt={project.title}
             />
-          </div> */}
+          </div>
 
           <div className='max-h-svh overflow-hidden overflow-y-visible mt-8 cursor-pointer'>
           <img
@@ -76,7 +90,7 @@ export default function PortfolioDetails() {
       </div>
       {/* View More  */}
 
-      <RecentWorks></RecentWorks>
+      <RecentWorks handleLoadingClik={handleLoadingClik}></RecentWorks>
     </div>
   );
 }
