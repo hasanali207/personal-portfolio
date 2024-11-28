@@ -10,7 +10,7 @@ export default function PortfolioDetails() {
   
   return (
     <div>
-      <div className='max-w-5xl mx-auto'>
+      <div className='max-w-6xl mx-auto'>
       <div className="flex justify-between pt-5">
         <div className="w-full lg:w-[60%]">
           <h1 className="text-2xl lg:text-3xl text-white">{project.title}</h1>
@@ -53,16 +53,21 @@ export default function PortfolioDetails() {
           </div>
           <div className="px-6 py-4">
             <h1 className="text-[#ddd] w-full mb-6 text-2xl border-b py-2">Technologies:</h1>
-            <div className="grid grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 gap-4">
               {Array.isArray(project.technologies) &&
                 project.technologies.map((tech, index) => (
-                  <img
+                  <div
                     key={index}
-                    className="h-10 cursor-pointer "
-                    src={tech.url}
+                    className="flex justify-center items-center space-x-2 border rounded-lg px-6 py-1 "
+                    
+                  > <p className='text-white text-sm '>{tech.title}</p>
+                  <img src={tech.url}
                     title={tech.title}
                     alt={tech.title}
-                  />
+                    className='h-12 w-12'
+                    />
+                   
+                  </div>
                 ))}
             </div>
           </div>
