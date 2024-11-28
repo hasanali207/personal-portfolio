@@ -21,7 +21,7 @@ export default function PortfolioDetails() {
   return (
     <div>
       {loading && <Preloader></Preloader>}
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-6xl mx-auto px-6 lg:px-0">
         <div className="flex flex-col lg:flex-row justify-between pt-5">
           <div className="w-full lg:w-[60%]">
             <h1 className="text-2xl lg:text-3xl text-white">{project.title}</h1>
@@ -49,7 +49,7 @@ export default function PortfolioDetails() {
               <h1 className="text-white mt-8 border-b text-2xl py-2">Links:</h1>
               <div>
                 <Link
-                  className="mb-2 btn bg-[#0089f7] text-[#fff] border-0 font-semibold"
+                  className="mb-2 btn bg-[#8750f7] hover:bg-[#8750f780] text-[#fff] border-0 font-semibold"
                   to={project.liveLink}
                 >
                   Live Site Link
@@ -57,15 +57,15 @@ export default function PortfolioDetails() {
               </div>
               <div>
                 <Link
-                  className=" mb-2 btn bg-[#0089f7] text-[#fff] border-0 font-semibold"
+                  className=" mb-2 btn bg-[#8750f7] hover:bg-[#8750f780] text-[#fff] border-0 font-semibold"
                   to={project.githubLink}
                 >
-                  Client Site Github Repo{' '}
+                  Client Site Github Repo
                 </Link>
               </div>
               <div>
                 <Link
-                  className=" mb-2 btn bg-[#0089f7] text-[#fff] border-0 font-semibold"
+                  className=" mb-2 btn bg-[#8750f7] hover:bg-[#8750f780] text-[#fff] border-0 font-semibold"
                   to={project.serverLink}
                 >
                   Server Site Github Repo
