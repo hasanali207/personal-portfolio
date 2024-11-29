@@ -22,7 +22,7 @@ import RecentWorks from './RecentWorks';
     <div>
       {loading && <Preloader></Preloader>}
       <div className="max-w-6xl mx-auto px-5 lg:px-0">
-        <div className="flex flex-col lg:flex-row justify-between pt-5">
+        <div className="flex flex-col lg:flex-row justify-between pt-5 space-x-0 lg:space-x-6">
           <div className="w-full lg:w-[60%]">
             <h1 className="text-2xl lg:text-3xl text-white">{project.title}</h1>
 
