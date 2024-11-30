@@ -97,7 +97,6 @@ export default function Skills() {
         </div>
 
         <div className="flex  items-center  justify-center flex-wrap gap-0 lg:gap-4 mt-6">
-         
           <div
             data-aos="fade-left"
             data-aos-delay="300"

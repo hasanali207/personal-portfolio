@@ -7,7 +7,6 @@ const Navbar = () => {
   const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
 
-
   const [activeId, setActiveId] = useState('');
 
   // List of menu items with corresponding section IDs
@@ -39,7 +38,6 @@ const Navbar = () => {
     navigate(path); // Navigate after the delay
   };
 
-
   return (
     <section className="w-full bg-[#0a192f] px-12 pb-4 pt-2" id="header">
       {isLoading && <Preloader />}
@@ -61,7 +59,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="navbar-end hidden lg:flex w-full lg:w-[70%]">
           <ul className="menu menu-horizontal px-1 text-white space-x-6">
-          <li
+            <li
               className="mr-2 text-lg cursor-pointer hover:text-[#757575]"
               onClick={() => handlePreloader('/')}
             >

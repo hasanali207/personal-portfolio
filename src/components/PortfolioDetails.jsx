@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { Link, useLoaderData, useParams } from 'react-router-dom';
 import Preloader from './Preloader ';
 import RecentWorks from './RecentWorks';
-import Contact from '../Pages/Contact'
+import Contact from '../Pages/Contact';
 
- export default function PortfolioDetails() {
+export default function PortfolioDetails() {
   const projects = useLoaderData();
   const { id } = useParams();
   const idInt = parseInt(id);
@@ -109,10 +109,13 @@ import Contact from '../Pages/Contact'
       {/* View More  */}
 
       <div id="portfolio">
-        <RecentWorks handleLoadingClick={handleLoadingClick}></RecentWorks></div>
+        <RecentWorks handleLoadingClick={handleLoadingClick}></RecentWorks>
+      </div>
       {/* Footer  */}
-       
-       <div id="contact"><Contact></Contact> </div>
+
+      <div id="contact">
+        <Contact></Contact>{' '}
+      </div>
     </div>
   );
 }

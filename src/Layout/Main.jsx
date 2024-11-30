@@ -20,7 +20,6 @@ const Main = () => {
   return (
     <>
       {isLoading && <Preloader />} {/* Show Preloader if loading */}
-      
       {!isLoading && !isDetailsPage && (
         <div>
           <Header />
@@ -28,7 +27,6 @@ const Main = () => {
           <Footer />
         </div>
       )}
-
       {/* For the details page, just render the content with no Header/Footer */}
       {!isLoading && isDetailsPage && (
         <div>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { FaAngleDoubleDown, FaExternalLinkAlt } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa6';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import Preloader from '../components/Preloader ';
 
 const RecentWorks = ({ handleLoadingClick }) => {
@@ -26,7 +26,7 @@ const RecentWorks = ({ handleLoadingClick }) => {
   // Filter projects based on active category
   const filteredProjects = projects.filter(
     (project) =>
-      activeCategory === 'All' || project.category === activeCategory
+      activeCategory === 'All' || project.category === activeCategory,
   );
 
   // Handle category change with zoom effect
@@ -159,7 +159,7 @@ const RecentWorks = ({ handleLoadingClick }) => {
 
                   <button
                     onClick={() => {
-                       // Call the prop function
+                      // Call the prop function
                       handlePreloaderAndNavigate(project.id);
                       handleLoadingClick(); // Pass the current project's ID
                     }}
