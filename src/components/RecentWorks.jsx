@@ -4,7 +4,7 @@ import { FaGithub } from 'react-icons/fa6';
 import { Link, useNavigate } from 'react-router-dom';
 import Preloader from '../components/Preloader ';
 
-const RecentWorks = () => {
+const RecentWorks = ({ handleLoadingClick }) => {
   const [activeCategory, setActiveCategory] = useState('All');
   const [projects, setProjects] = useState([]);
   const [visibleCount, setVisibleCount] = useState(2);
@@ -159,7 +159,7 @@ const RecentWorks = () => {
 
                   <button
                     onClick={() => {
-                      
+                      handleLoadingClick(); // Call the prop function
                       handlePreloaderAndNavigate(project.id); // Pass the current project's ID
                     }}
                     className="text-sm bg-transparent border p-2 rounded-md text-white hover:bg-transparent hover:text-[#757575]"

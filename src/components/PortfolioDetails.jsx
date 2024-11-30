@@ -11,7 +11,7 @@ import Contact from '../Pages/Contact'
   const project = projects.find((item) => item.id === idInt);
   const [loading, setLoading] = useState(false);
 
-  const handleLoadingClik = () => {
+  const handleLoadingClick = () => {
     setLoading(true);
     window.scrollTo(0, 0); // Scroll to the top of the page
     setTimeout(() => {
@@ -109,7 +109,7 @@ import Contact from '../Pages/Contact'
       {/* View More  */}
 
       <div id="portfolio">
-        <RecentWorks handleLoadingClik={handleLoadingClik}></RecentWorks></div>
+        <RecentWorks handleLoadingClick={handleLoadingClick}></RecentWorks></div>
       {/* Footer  */}
        
        <div id="contact"><Contact></Contact> </div>
