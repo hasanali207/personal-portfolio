@@ -21,7 +21,7 @@ const router = createBrowserRouter([
         element: <RecentWorks></RecentWorks>,
       },
       {
-        path: 'portfolio/:id',
+        path: '/portfolio/:id',
         element: <PortfolioDetails />,
         loader: () => fetch('../projects.json'),
       },

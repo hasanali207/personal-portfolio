@@ -1,13 +1,16 @@
 import { useEffect, useState } from 'react';
 import { FaAngleDoubleDown, FaExternalLinkAlt } from 'react-icons/fa';
 import { FaGithub } from 'react-icons/fa6';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import Preloader from '../components/Preloader ';
 
-const RecentWorks = ({ handleLoadingClik }) => {
+const RecentWorks = () => {
   const [activeCategory, setActiveCategory] = useState('All');
   const [projects, setProjects] = useState([]);
   const [visibleCount, setVisibleCount] = useState(2);
   const [zoomEffect, setZoomEffect] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
 
   // Fetch projects data
   useEffect(() => {
@@ -23,7 +26,7 @@ const RecentWorks = ({ handleLoadingClik }) => {
   // Filter projects based on active category
   const filteredProjects = projects.filter(
     (project) =>
-      activeCategory === 'All' || project.category === activeCategory,
+      activeCategory === 'All' || project.category === activeCategory
   );
 
   // Handle category change with zoom effect
@@ -51,8 +54,17 @@ const RecentWorks = ({ handleLoadingClik }) => {
       : words.slice(0, wordLimit).join(' ') + ' ...';
   };
 
+  // Handle preloader and navigation
+  const handlePreloaderAndNavigate = async (id) => {
+    setIsLoading(true);
+    await new Promise((resolve) => setTimeout(resolve, 2000)); // Simulate delay for preloader
+    setIsLoading(false);
+    navigate(`/portfolio/${id}`); // Navigate using the project's ID
+  };
+
   return (
     <section className="recent-works portfolio mt:0 lg:mt-10" id="projects">
+      {isLoading && <Preloader />}
       <div>
         {/* Section Title */}
         <div className="flex justify-center items-center">
@@ -80,7 +92,6 @@ const RecentWorks = ({ handleLoadingClik }) => {
 
         {/* Projects Grid */}
         <div className="projects">
-          {/* Check if there are no filtered projects */}
           {filteredProjects.length === 0 ? (
             <div className="flex justify-center">
               <h1>No projects found, please try another tab.</h1>
@@ -145,14 +156,16 @@ const RecentWorks = ({ handleLoadingClik }) => {
                       <FaGithub />
                     </a>
                   </div>
-                  <Link to={`/portfolio/${project.id}`}>
-                    <button
-                      onClick={handleLoadingClik}
-                      className="text-sm bg-transparent border p-2 rounded-md text-white hover:bg-transparent hover:text-[#757575]"
-                    >
-                      View Details
-                    </button>
-                  </Link>
+
+                  <button
+                    onClick={() => {
+                      
+                      handlePreloaderAndNavigate(project.id); // Pass the current project's ID
+                    }}
+                    className="text-sm bg-transparent border p-2 rounded-md text-white hover:bg-transparent hover:text-[#757575]"
+                  >
+                    View Details
+                  </button>
                 </div>
               </div>
             ))

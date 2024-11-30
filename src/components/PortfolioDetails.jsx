@@ -108,9 +108,11 @@ import Contact from '../Pages/Contact'
       </div>
       {/* View More  */}
 
-      <RecentWorks handleLoadingClik={handleLoadingClik}></RecentWorks>
+      <div id="portfolio">
+        <RecentWorks handleLoadingClik={handleLoadingClik}></RecentWorks></div>
       {/* Footer  */}
-      <Contact></Contact>
+       
+       <div id="contact"><Contact></Contact> </div>
     </div>
   );
 }
