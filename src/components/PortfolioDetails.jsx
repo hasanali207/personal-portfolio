@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useLoaderData, useParams } from 'react-router-dom';
 import Preloader from './Preloader ';
 import RecentWorks from './RecentWorks';
+import Contact from '../Pages/Contact'
 
  export default function PortfolioDetails() {
   const projects = useLoaderData();
@@ -108,6 +109,8 @@ import RecentWorks from './RecentWorks';
       {/* View More  */}
 
       <RecentWorks handleLoadingClik={handleLoadingClik}></RecentWorks>
+      {/* Footer  */}
+      <Contact></Contact>
     </div>
   );
 }

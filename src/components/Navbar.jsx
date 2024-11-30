@@ -1,15 +1,22 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import logo from '../assets/logome.svg';
 import Preloader from '../components/Preloader ';
 
 const Navbar = () => {
   const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
 
-  const handlePreloader = async () => {
+  const handlePreloaderAndScroll = async (path, sectionId) => {
     setIsLoading(true);
     await new Promise((resolve) => setTimeout(resolve, 2000));
     setIsLoading(false);
+
+    if (path) {
+      navigate(path); // Navigate to a different route
+    } else if (sectionId) {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -19,9 +26,9 @@ const Navbar = () => {
       <div className="flex justify-between items-center" id="navbar">
         {/* Logo */}
         <div className="flex items-center">
-          <Link to="/" onClick={handlePreloader}>
+          <button onClick={() => handlePreloaderAndScroll('/')}>
             <img src={logo} alt="Logo" />
-          </Link>
+          </button>
           <a
             href="mailto:hasandevpro@gmail.com"
             className="hidden lg:flex text-white hover:text-[#757575]"
@@ -35,17 +42,24 @@ const Navbar = () => {
           <ul className="px-1 text-white">
             <li
               className="mr-2 text-lg cursor-pointer hover:text-[#757575]"
-              onClick={handlePreloader}
+              onClick={() => handlePreloaderAndScroll('/')}
             >
-              <Link to="/">Home</Link>
+              Home
+            </li>
+            <li
+              className="mr-2 text-lg cursor-pointer hover:text-[#757575]"
+              onClick={() => handlePreloaderAndScroll(null, 'about-section')}
+            >
+              About
             </li>
           </ul>
 
           {/* Hire Me Button */}
-          <button className="text-2xl font-bold w-36 bg-gradient-to-r from-primary via-[#8750f7] to-[#ff00d3] bg-300% text-transparent bg-clip-text animate-gradient">
-            <Link to="#" onClick={handlePreloader}>
-              Hire Me
-            </Link>
+          <button
+            className="text-2xl font-bold w-36 bg-gradient-to-r from-primary via-[#8750f7] to-[#ff00d3] bg-300% text-transparent bg-clip-text animate-gradient"
+            onClick={() => handlePreloaderAndScroll(null, 'contact')}
+          >
+            Hire Me
           </button>
         </div>
       </div>
