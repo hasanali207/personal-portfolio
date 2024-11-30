@@ -159,8 +159,9 @@ const RecentWorks = ({ handleLoadingClick }) => {
 
                   <button
                     onClick={() => {
-                      handleLoadingClick(); // Call the prop function
-                      handlePreloaderAndNavigate(project.id); // Pass the current project's ID
+                       // Call the prop function
+                      handlePreloaderAndNavigate(project.id);
+                      handleLoadingClick(); // Pass the current project's ID
                     }}
                     className="text-sm bg-transparent border p-2 rounded-md text-white hover:bg-transparent hover:text-[#757575]"
                   >
