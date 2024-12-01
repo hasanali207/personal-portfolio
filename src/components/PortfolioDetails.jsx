@@ -11,12 +11,11 @@ export default function PortfolioDetails() {
   const project = projects.find((item) => item.id === idInt);
   const [loading, setLoading] = useState(false);
 
-  const handleLoadingClick = () => {
+  const handleLoadingClick = async() => {
     setLoading(true);
-    window.scrollTo(0, 0); // Scroll to the top of the page
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
+    await new Promise((resolve) => setTimeout(resolve, 2000)); // Simulate delay for preloader
+    setLoading(false);
+    window.scrollTo(0, 0);
   };
 
   return (
