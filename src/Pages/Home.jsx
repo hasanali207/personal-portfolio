@@ -14,7 +14,7 @@ const Home = () => {
       </div>
 
       <div id="skills">
-        {' '}
+        
         <Skills></Skills>
       </div>
 
