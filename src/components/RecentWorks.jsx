@@ -59,6 +59,7 @@ const RecentWorks = ({ handleLoadingClick }) => {
     setIsLoading(true);
     await new Promise((resolve) => setTimeout(resolve, 2000)); // Simulate delay for preloader
     setIsLoading(false);
+    window.scrollTo(0, 0);
     navigate(`/portfolio/${id}`); // Navigate using the project's ID
   };
 

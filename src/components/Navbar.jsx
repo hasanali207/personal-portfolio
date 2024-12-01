@@ -88,7 +88,7 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end hidden lg:flex w-full lg:w-[70%]">
-          <ul className="menu hidden lg:flex menu-horizontal px-1 text-white space-x-2">
+          <ul className="menu hidden lg:flex menu-horizontal px-1 text-white space-x-6">
             <li
               className="mr-2 text-lg cursor-pointer hover:text-[#757575]"
               onClick={() => handlePreloader('/')}
