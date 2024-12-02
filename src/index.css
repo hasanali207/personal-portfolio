@@ -154,10 +154,10 @@ border-color: #8750f7;
   width: 100%;
 }
 
-.heading {
+/* .heading {
   font-size: 2rem;
   color: #b39ddb;
-}
+} */
 
 .category-buttons {
   display: flex;
@@ -176,6 +176,7 @@ border-color: #8750f7;
   transition: all 0.2s;
   font-size: 16px;
 }
+
 
 .category-buttons .active {
   background-color: #8750f7;
