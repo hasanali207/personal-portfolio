@@ -41,7 +41,7 @@ const Preloader = () => {
       }`}
     >
       <h1
-        className="text-4xl font-light text-[#ddd] tracking-widest bg-gradient-to-r from-primary via-[#8750f7] to-[#ff00d3] bg-300% text-transparent bg-clip-text animate-gradient"
+        className="text-4xl font-semibold text-[#ddd] tracking-widest bg-gradient-to-r from-primary via-[#8750f7] to-[#ff00d3] bg-300% text-transparent bg-clip-text animate-gradient"
         style={{ letterSpacing: '10px' }}
       >
         {loadingText}
