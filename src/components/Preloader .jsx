@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 
 const Preloader = () => {
   const [loadingText, setLoadingText] = useState('');
   const [isSlideUp, setIsSlideUp] = useState(false); // For slide-up effect
-  const fullText = 'LOADING';
+  const fullText = 'HASANDEVPRO';
 
   useEffect(() => {
     const preloader = document.querySelector('.preloader');
@@ -24,12 +24,12 @@ const Preloader = () => {
           setIsSlideUp(true); // Trigger the slide-up effect
           setTimeout(() => {
             preloader.style.display = 'none'; // Remove the preloader from DOM
-          }, 2000); // Delay to allow slide-up animation
-        }, 2000); // Wait 1 second before sliding up
+          }, 3000); // Delay to allow slide-up animation
+        }, 3000); // Wait 1 second before sliding up
       }
     };
 
-    const typingInterval = setInterval(typeWriter, 150);
+    const typingInterval = setInterval(typeWriter, 120);
 
     return () => clearInterval(typingInterval); // Cleanup interval
   }, []);
@@ -41,8 +41,8 @@ const Preloader = () => {
       }`}
     >
       <h1
-        className="text-2xl font-light text-[#ddd] tracking-widest"
-        style={{ letterSpacing: '30px' }}
+        className="text-4xl font-light text-[#ddd] tracking-widest bg-gradient-to-r from-primary via-[#8750f7] to-[#ff00d3] bg-300% text-transparent bg-clip-text animate-gradient"
+        style={{ letterSpacing: '10px' }}
       >
         {loadingText}
       </h1>
