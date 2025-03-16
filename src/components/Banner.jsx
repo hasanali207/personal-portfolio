@@ -16,7 +16,7 @@ export default function Banner() {
                 data-aos-delay="600"
                 className=" text-3xl lg:text-5xl font-bold text-[#ddd]"
               >
-                I am HasanAli
+                I am Hasan Ali
               </h3>
               <h1
                 data-aos="fade-up"
@@ -29,7 +29,7 @@ export default function Banner() {
               <p
                 data-aos="fade-up"
                 data-aos-delay="1200"
-                className=" w-full lg:w-[31rem] text-lg lg:text-xl text-left font-light text-[#ddd]  mt-6"
+                className=" w-full lg:w-[31rem] text-base text-left font-light text-[#ddd]  mt-6"
               >
                 I break down complex user experience problems to create
                 integrity focussed solutions that connect billions of people
