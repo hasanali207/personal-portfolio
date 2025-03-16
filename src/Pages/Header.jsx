@@ -69,7 +69,7 @@ const Header = () => {
             {menuItems.map((item) => (
               <li
                 key={item.id}
-                className={`mr-2 text-lg text-gray-700 hover:text-[#757575] cursor-pointer ${
+                className={`mr-2 text-base text-gray-700 hover:text-[#757575] cursor-pointer ${
                   activeId === item.id ? 'text-[#757575]' : ''
                 }`}
                 onClick={() => handleScrollToSection(item.id)}

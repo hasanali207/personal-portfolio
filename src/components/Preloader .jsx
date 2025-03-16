@@ -3,7 +3,7 @@ import  { useEffect, useState } from 'react';
 const Preloader = () => {
   const [loadingText, setLoadingText] = useState('');
   const [isSlideUp, setIsSlideUp] = useState(false); // For slide-up effect
-  const fullText = 'HASANDEVPRO';
+  const fullText = 'HASANALI';
 
   useEffect(() => {
     const preloader = document.querySelector('.preloader');
